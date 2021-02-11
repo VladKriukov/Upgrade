@@ -195,7 +195,7 @@ public class Inventory : MonoBehaviour
     {
         for(int i=0;i<inventory.Count;i++)
         {
-            inventory[i] = PlayerPrefs.GetInt("inventory" + i, -1) >= 0 ? database.items(PlayerPrefs.GetInt("inventory" + 1)):new Item() ;
+            inventory[i] = PlayerPrefs.GetInt("inventory " + i, -1) >= 0 ? database.items[PlayerPrefs.GetInt("inventory" + 1)] : new Item();
         }
     }
 }
