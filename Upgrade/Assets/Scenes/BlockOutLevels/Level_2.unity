@@ -670,6 +670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8431832989686405986, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
+      propertyPath: bouncerJumpExtra
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8431832989686405988, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
