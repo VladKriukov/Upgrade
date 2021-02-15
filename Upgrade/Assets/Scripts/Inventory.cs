@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     private bool draggingitem;
     private Item draggeditem;
     private int previndex;
+    private Color color;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +54,7 @@ public class Inventory : MonoBehaviour
         }
         tooltip = "";
         GUI.skin = skin;
+        
         if (showinventory)
         {
             DrawInventory();
@@ -131,7 +133,7 @@ public class Inventory : MonoBehaviour
     }
     string createtooltip(Item item)
     {
-        tooltip = "<color=descolor>"+item.itemname +"</color>"+"\n\n" + "<color=descolor>"+item.itemDesc+"</color>";
+        tooltip = item.itemname+"\n\n" +item.itemDesc;
         return tooltip;
     }
     void removeitem(int id)
