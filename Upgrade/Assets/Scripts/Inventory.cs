@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField] Color descolor;
     public int slotsx, slotsy;
     public GUISkin skin;
     public List<Item> inventory=new List<Item>();
@@ -130,7 +131,7 @@ public class Inventory : MonoBehaviour
     }
     string createtooltip(Item item)
     {
-        tooltip = item.itemname +"\n\n" + item.itemDesc;
+        tooltip = "<color=descolor>"+item.itemname +"</color>"+"\n\n" + "<color=descolor>"+item.itemDesc+"</color>";
         return tooltip;
     }
     void removeitem(int id)
