@@ -46,6 +46,10 @@ public class Inventory : MonoBehaviour
         {
             loadinventory();
         }
+        if (GUI.Button(new Rect(40, 350, 100, 40), "Add"))
+        {
+            Additem(3);
+        }
         tooltip = "";
         GUI.skin = skin;
         if (showinventory)
