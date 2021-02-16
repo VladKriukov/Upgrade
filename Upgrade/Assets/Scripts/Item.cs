@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 [System.Serializable]
 public class Item
 {
@@ -12,13 +11,14 @@ public class Item
     public int itemSpeed;
     public ItemType itemType;
 
-    public enum ItemType {
+    public enum ItemType
+    {
         Weapon,
         Consumable,
         Quest
     }
 
-    public Item(string name,int id,string desc, int power,int speed,ItemType type)
+    public Item(string name, int id, string desc, int power, int speed, ItemType type)
     {
         itemname = name;
         itemID = id;
@@ -27,11 +27,9 @@ public class Item
         itemPower = power;
         itemType = type;
     }
+
     public Item()
     {
         itemID = -1;
     }
-
-
-
 }
