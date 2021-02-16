@@ -87,7 +87,7 @@ public class Inventory : MonoBehaviour
                     {
                        tooltip= createtooltip(slots[i]);
                         showtooltip = true;
-                        if(e.button==0&&e.type==EventType.MouseDrag)
+                        if(e.button==0&&e.type==EventType.MouseDrag && !draggingitem)
                         {
                             draggingitem = true;
                             previndex = i;
