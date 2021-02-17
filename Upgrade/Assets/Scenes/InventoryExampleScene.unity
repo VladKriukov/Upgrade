@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48e93c7cf4b9066428c5f625f8b44d63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  descolor: {r: 0.35555357, g: 0.65698254, b: 0.8867924, a: 0}
   slotsx: 5
   slotsy: 4
   skin: {fileID: 11400000, guid: d6392ff0687f1404cbd9044bdcda1646, type: 2}

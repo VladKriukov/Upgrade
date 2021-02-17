@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] private Color descolor;
+    
     public int slotsx, slotsy;
     public GUISkin skin;
     public List<Item> inventory = new List<Item>();
@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
     private bool draggingitem;
     private Item draggeditem;
     private int previndex;
-    private Color color;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -55,14 +55,14 @@ public class Inventory : MonoBehaviour
         }
         tooltip = "";
         GUI.skin = skin;
-
+        
         if (showinventory)
         {
             DrawInventory();
         }
         if (showtooltip)
         {
-            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 200, 200), tooltip, skin.GetStyle("tooltip"));
+            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 200, 120), tooltip, skin.GetStyle("tooltip"));
         }
         if (draggingitem)
         {
@@ -137,7 +137,8 @@ public class Inventory : MonoBehaviour
 
     private string createtooltip(Item item)
     {
-        tooltip = item.itemname + "\n\n" + item.itemDesc;
+      
+        tooltip = item.itemname +"\n\n" + item.itemDesc;
         return tooltip;
     }
 
