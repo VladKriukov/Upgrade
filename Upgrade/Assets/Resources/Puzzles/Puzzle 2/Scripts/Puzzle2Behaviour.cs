@@ -1,28 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Xml.Schema;
-using UnityEngine;
-using UnityEngine.UI;       
+﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Puzzle2Behaviour : MonoBehaviour
 {
-    [SerializeField] Text text;
-    [SerializeField] Button button;
-    [SerializeField] Button submit;
-    [SerializeField] GameObject numberOne, numberTwo, numberThree, numberFour;
+    [SerializeField] private Text text;
+    [SerializeField] private Button button;
+    [SerializeField] private Button submit;
+    [SerializeField] private GameObject numberOne, numberTwo, numberThree, numberFour;
 
-    int doorNumber;
+    private int doorNumber;
 
-    int firstNumber, secondNumber, thirdNumber, fourthNumber;
+    private int firstNumber, secondNumber, thirdNumber, fourthNumber;
 
-
-    void Start()
+    private void Start()
     {
         Button buttonComponent = button.GetComponent<Button>();
         Button submitComponent = submit.GetComponent<Button>();
         buttonComponent.onClick.AddListener(DebugButtonClick);
         submitComponent.onClick.AddListener(compareValues);
-
 
         doorNumber = Random.Range(0, 9999);
         firstNumber = (int)char.GetNumericValue(doorNumber.ToString()[0]);
@@ -31,16 +26,9 @@ public class Puzzle2Behaviour : MonoBehaviour
         fourthNumber = (int)char.GetNumericValue(doorNumber.ToString()[3]);
 
         text.text = "Door Number: " + doorNumber;
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void compareValues()
+    private void compareValues()
     {
         Debug.Log(firstNumber + "/" + numberOne.GetComponent<NumberBehaviour>().number);
         Debug.Log(secondNumber + "/" + numberTwo.GetComponent<NumberBehaviour>().number);
@@ -66,7 +54,7 @@ public class Puzzle2Behaviour : MonoBehaviour
         }
     }
 
-    void DebugButtonClick()
+    private void DebugButtonClick()
     {
         doorNumber = Random.Range(1000, 9999);
         text.text = "Door Number: " + doorNumber;

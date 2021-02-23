@@ -1,29 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
-using System;
 using UnityEngine.UI;
 
 public class ButtonBehaviour : MonoBehaviour
 {
-    bool lockPuzzle = false;
+    private bool lockPuzzle = false;
 
-    void Start()
+    private void Start()
     {
         gameObject.GetComponentInChildren<Text>().text = gameObject.name;
 
         Button btn = gameObject.GetComponent<Button>();
         btn.onClick.AddListener(OnClick);
-
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!gameObject.activeSelf)
         {
-
             gameObject.SetActive(true);
             GetComponent<Image>().color = Color.white;
         }
@@ -34,7 +28,7 @@ public class ButtonBehaviour : MonoBehaviour
         }
     }
 
-    void OnClick()
+    private void OnClick()
     {
         Button btn = gameObject.GetComponent<Button>();
         int buttonNumber = Int32.Parse(gameObject.name);
@@ -53,12 +47,10 @@ public class ButtonBehaviour : MonoBehaviour
             }
             else
             {
-
                 Debug.Log("Wrong button, restarting");
                 Puzzle4Behaviour.currentButton = 1;
                 Puzzle4Behaviour.resetColours = true;
             }
         }
-
     }
 }

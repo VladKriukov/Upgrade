@@ -2,13 +2,12 @@
 
 public class LivesManager : MonoBehaviour
 {
+    private GameObject lifeSprite;
 
-    GameObject lifeSprite;
+    private int children;
+    private int index;
 
-    int children;
-    int index;
-
-    void Start()
+    private void Start()
     {
         lifeSprite = Resources.Load("Life") as GameObject;
         if (transform.childCount < GameManager.lives)
@@ -36,5 +35,4 @@ public class LivesManager : MonoBehaviour
         transform.GetChild(index).gameObject.SetActive(false);
         index++;
     }
-
 }

@@ -3,8 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-
-    static int currentLevel = 1;
+    private static int currentLevel = 1;
 
     private void OnDisable()
     {
@@ -32,5 +31,4 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(currentLevel);
     }
-
 }

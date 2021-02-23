@@ -2,27 +2,29 @@
 
 public class PlayerManager : MonoBehaviour
 {
-
-    [SerializeField] float bouncerJumpExtra;
-    Collectable collectable;
-    Upgrade upgrade;
-    Vector2 respawnPoint;
+    [SerializeField] private float bouncerJumpExtra;
+    private Collectable collectable;
+    private Upgrade upgrade;
+    private Vector2 respawnPoint;
 
     public delegate void Collect(int amount);
+
     public static event Collect OnCollected;
 
     public delegate void LevelUp();
+
     public static event LevelUp OnUpgrade;
 
     public delegate void Die();
+
     public static event Die OnDie;
 
-    void Start()
+    private void Start()
     {
         respawnPoint = transform.position;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         collectable = collision.GetComponent<Collectable>();
         upgrade = collision.GetComponent<Upgrade>();
@@ -50,18 +52,21 @@ public class PlayerManager : MonoBehaviour
             case "Danger":
                 Respawn();
                 break;
+
             case "Respawn":
                 respawnPoint = transform.position;
                 break;
+
             case "Bouncer":
                 GetComponent<Movement>().JumpUp(bouncerJumpExtra);
                 break;
+
             default:
                 break;
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Finish"))
         {
@@ -85,7 +90,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    void Respawn()
+    private void Respawn()
     {
         GameManager.lives--;
         OnDie?.Invoke();
@@ -100,7 +105,7 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    void ReloadLevel()
+    private void ReloadLevel()
     {
         LevelManager.ReloadLevel();
     }

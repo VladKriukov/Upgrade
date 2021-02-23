@@ -3,26 +3,25 @@ using UnityEngine;
 
 public class StickmanController : MonoBehaviour
 {
+    [SerializeField] private Muscle[] muscles;
 
-    [SerializeField] Muscle[] muscles;
+    [SerializeField] private bool right = false;
+    [SerializeField] private bool left = false;
 
-    [SerializeField] bool right = false;
-    [SerializeField] bool left = false;
+    [SerializeField] private Rigidbody2D upperRightLeg;
+    [SerializeField] private Rigidbody2D upperLeftLeg;
 
-    [SerializeField] Rigidbody2D upperRightLeg;
-    [SerializeField] Rigidbody2D upperLeftLeg;
+    [SerializeField] private Vector2 walkRightVector;
+    [SerializeField] private Vector2 walkLeftVector;
 
-    [SerializeField] Vector2 walkRightVector;
-    [SerializeField] Vector2 walkLeftVector;
+    [SerializeField] private float jumpStrength;
 
-    [SerializeField] float jumpStrength;
-
-    [SerializeField] float moveDelay;
-    float moveDelayPointer;
+    [SerializeField] private float moveDelay;
+    private float moveDelayPointer;
 
     [HideInInspector] public int collisions;
 
-    void Update()
+    private void Update()
     {
         foreach (var _muscle in muscles)
         {
@@ -34,7 +33,7 @@ public class StickmanController : MonoBehaviour
         Jump();
     }
 
-    void Walk()
+    private void Walk()
     {
         right = Input.GetKey(KeyCode.D);
         left = Input.GetKey(KeyCode.A);
@@ -54,7 +53,7 @@ public class StickmanController : MonoBehaviour
         }
     }
 
-    void Jump()
+    private void Jump()
     {
         if (collisions > 0 && Input.GetKey(KeyCode.Space))
         {
@@ -63,30 +62,29 @@ public class StickmanController : MonoBehaviour
         }
     }
 
-    void Step1Right()
+    private void Step1Right()
     {
         upperRightLeg.AddForce(walkRightVector, ForceMode2D.Impulse);
         upperLeftLeg.AddForce(walkRightVector * -0.5f, ForceMode2D.Impulse);
     }
 
-    void Step2Right()
+    private void Step2Right()
     {
         upperLeftLeg.AddForce(walkRightVector, ForceMode2D.Impulse);
         upperRightLeg.AddForce(walkRightVector * -0.5f, ForceMode2D.Impulse);
     }
 
-    void Step1Left()
+    private void Step1Left()
     {
         upperRightLeg.AddForce(walkLeftVector, ForceMode2D.Impulse);
         upperLeftLeg.AddForce(walkLeftVector * -0.5f, ForceMode2D.Impulse);
     }
 
-    void Step2Left()
+    private void Step2Left()
     {
         upperLeftLeg.AddForce(walkLeftVector, ForceMode2D.Impulse);
         upperRightLeg.AddForce(walkLeftVector * -0.5f, ForceMode2D.Impulse);
     }
-
 }
 
 [Serializable]
