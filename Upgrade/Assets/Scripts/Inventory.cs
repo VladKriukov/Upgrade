@@ -60,6 +60,10 @@ public class Inventory : MonoBehaviour
         {
             DrawInventory();
         }
+        else
+        {
+            showtooltip = false;
+        }
         if (showtooltip)
         {
             GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 200, 120), tooltip, skin.GetStyle("tooltip"));
@@ -104,27 +108,30 @@ public class Inventory : MonoBehaviour
                             draggingitem = false;
                             draggeditem = null;
                         }
-                    }
-                }
-                else
-                {
-                    if (slotrect.Contains(Event.current.mousePosition))
-                    {
-                        if (e.isMouse && e.type == EventType.MouseDown && e.button == 1)
+
+                        if (Input.GetMouseButtonDown(1))
                         {
+                            
                             if (item.itemType == Item.ItemType.Consumable)
                             {
-                                useconsumable(slots[i], i, true);
+                                useconsumable(slots[i].itemname, i, true);
                             }
                         }
-                        if (e.type == EventType.MouseUp && draggingitem)
-                        {
-                            inventory[i] = draggeditem;
-                            draggingitem = false;
-                            draggeditem = null;
-                        }
+
                     }
                 }
+
+                if (slotrect.Contains(Event.current.mousePosition))
+                {
+
+                    if (e.type == EventType.MouseUp && draggingitem)
+                    {
+                        inventory[i] = draggeditem;
+                        draggingitem = false;
+                        draggeditem = null;
+                    }
+                }
+
                 if (tooltip == "")
                 {
                     showtooltip = false;
@@ -154,7 +161,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    private void Additem(int id)
+    public void Additem(int id)
     {
         for (int i = 0; i < inventory.Count; i++)
         {
@@ -186,19 +193,25 @@ public class Inventory : MonoBehaviour
         return result;
     }
 
-    private void useconsumable(Item item, int slot, bool deleteitem)
+    private void useconsumable(string item, int slot, bool deleteitem)
     {
-        switch (item.itemID)
+        Debug.Log("Item: " + item);
+        Debug.Log("Slot: " + slot);
+
+        switch (item)
         {
-            case 1://use the id to set the consumables
+            case "Health Potion"://use the id to set the consumables
                 {
-                    print("item to be used");
+                    
                     break;
                 }
         }
+
         if (deleteitem)
         {
-            slots[slot] = new Item();
+            
+            Debug.Log("Removing Item: " + slots[slot].itemname);
+            inventory[slot] = new Item();
         }
     }
 
