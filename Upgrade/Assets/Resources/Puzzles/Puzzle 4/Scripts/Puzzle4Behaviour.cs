@@ -1,26 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Puzzle4Behaviour : MonoBehaviour
 {
     public static bool lockPuzzle = false;
-    [SerializeField] GameObject[] Number;
-    [SerializeField] Text text;
+    [SerializeField] private GameObject[] Number;
+    [SerializeField] private Text text;
     public static int currentButton = 1;
     public static bool resetColours;
 
-    void Start()
-    {
-
-        //  gameObject.GetComponent<Text>().text = number.ToString();
-
-    }
-
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (resetColours)
         {
@@ -34,7 +23,7 @@ public class Puzzle4Behaviour : MonoBehaviour
         }
     }
 
-    void Finished()
+    private void Finished()
     {
         text.gameObject.SetActive(true);
         for (int i = 0; i < Number.Length; i++)
@@ -43,7 +32,8 @@ public class Puzzle4Behaviour : MonoBehaviour
             resetColours = false;
         }
     }
-    void ResetColours()
+
+    private void ResetColours()
     {
         if (!lockPuzzle)
         {
@@ -52,7 +42,6 @@ public class Puzzle4Behaviour : MonoBehaviour
                 Number[i].gameObject.GetComponent<Image>().color = Color.white;
                 resetColours = false;
             }
-
         }
     }
 }

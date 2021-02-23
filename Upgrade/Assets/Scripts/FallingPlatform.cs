@@ -5,11 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class FallingPlatform : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    private BoxCollider2D boxCollider;
 
-    Rigidbody2D rb;
-    BoxCollider2D boxCollider;
-
-    Vector2 startingPos;
+    private Vector2 startingPos;
 
     private void Awake()
     {
@@ -27,7 +26,7 @@ public class FallingPlatform : MonoBehaviour
         }
     }
 
-    IEnumerator Fall()
+    private IEnumerator Fall()
     {
         yield return new WaitForSeconds(0.5f);
         rb.bodyType = RigidbodyType2D.Dynamic;
@@ -38,5 +37,4 @@ public class FallingPlatform : MonoBehaviour
         transform.position = startingPos;
         yield return null;
     }
-
 }

@@ -1,25 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MoveBehaviour : MonoBehaviour
 {
-    [SerializeField] GameObject correctInput;
+    [SerializeField] private GameObject correctInput;
     private bool moving;
     private bool locked;
     private float startPosX;
     private float startPosY;
-    
 
     private Vector3 resetPosition;
 
-    void Start()
+    private void Start()
     {
         resetPosition = transform.localPosition;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (moving)
         {
@@ -55,8 +51,6 @@ public class MoveBehaviour : MonoBehaviour
         moving = false;
         if (!locked)
         {
-
-
             if (Mathf.Abs(transform.localPosition.x - correctInput.transform.localPosition.x) <= 0.5f &&
                 Mathf.Abs(transform.localPosition.y - correctInput.transform.localPosition.y) <= 0.5f)
             {

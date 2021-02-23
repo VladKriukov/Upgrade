@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    
     public int slotsx, slotsy;
     public GUISkin skin;
     public List<Item> inventory = new List<Item>();
@@ -16,8 +15,6 @@ public class Inventory : MonoBehaviour
     private Item draggeditem;
     private int previndex;
 
-
-    // Start is called before the first frame update
     private void Start()
     {
         for (int i = 0; i < (slotsx * slotsy); i++)
@@ -55,7 +52,7 @@ public class Inventory : MonoBehaviour
         }
         tooltip = "";
         GUI.skin = skin;
-        
+
         if (showinventory)
         {
             DrawInventory();
@@ -111,19 +108,16 @@ public class Inventory : MonoBehaviour
 
                         if (Input.GetMouseButtonDown(1))
                         {
-                            
                             if (item.itemType == Item.ItemType.Consumable)
                             {
                                 useconsumable(slots[i].itemname, i, true);
                             }
                         }
-
                     }
                 }
 
                 if (slotrect.Contains(Event.current.mousePosition))
                 {
-
                     if (e.type == EventType.MouseUp && draggingitem)
                     {
                         inventory[i] = draggeditem;
@@ -144,8 +138,7 @@ public class Inventory : MonoBehaviour
 
     private string createtooltip(Item item)
     {
-      
-        tooltip = item.itemname +"\n\n" + item.itemDesc;
+        tooltip = item.itemname + "\n\n" + item.itemDesc;
         return tooltip;
     }
 
@@ -202,14 +195,12 @@ public class Inventory : MonoBehaviour
         {
             case "Health Potion"://use the id to set the consumables
                 {
-                    
                     break;
                 }
         }
 
         if (deleteitem)
         {
-            
             Debug.Log("Removing Item: " + slots[slot].itemname);
             inventory[slot] = new Item();
         }

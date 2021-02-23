@@ -1,17 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class NumberBehaviour : MonoBehaviour
 {
-    [SerializeField] Button up;
-    [SerializeField] Button down;
-    [SerializeField] Text text;
+    [SerializeField] private Button up;
+    [SerializeField] private Button down;
+    [SerializeField] private Text text;
 
     [HideInInspector] public int number;
 
-    void Start()
+    private void Start()
     {
         Button upButton = up.GetComponent<Button>();
         Button downButton = down.GetComponent<Button>();
@@ -22,13 +20,7 @@ public class NumberBehaviour : MonoBehaviour
         text.text = number.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void  upClicked()
+    private void upClicked()
     {
         if (number == 9)
         {
@@ -41,7 +33,7 @@ public class NumberBehaviour : MonoBehaviour
         text.text = number.ToString();
     }
 
-    void downClicked()
+    private void downClicked()
     {
         if (number == 0)
         {

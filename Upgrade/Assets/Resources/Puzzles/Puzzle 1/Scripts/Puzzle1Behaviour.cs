@@ -4,18 +4,17 @@ public class Puzzle1Behaviour : MonoBehaviour
 {
     [SerializeField]
     private Transform[] picture;
-    [SerializeField] GameObject text;
-    [SerializeField] GameObject nextButton;
+
+    [SerializeField] private GameObject text;
+    [SerializeField] private GameObject nextButton;
     public static bool won;
 
-
-    void Start()
+    private void Start()
     {
         won = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (picture[0].transform.rotation.z == 0 &&
             picture[1].transform.rotation.z == 0 &&
@@ -30,4 +29,3 @@ public class Puzzle1Behaviour : MonoBehaviour
         }
     }
 }
-
