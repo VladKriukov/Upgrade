@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemDatabase : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
 
-    void Start()
+    private void Start()
     {
         // Name, ID, Lore, Power, Speed, Item Type
 
@@ -18,5 +17,4 @@ public class ItemDatabase : MonoBehaviour
         items.Add(new Item("Upgraded Backpack", 5, "Upgraded backpack ", 0, 0, Item.ItemType.Consumable));
         items.Add(new Item("Sword", 6, "a long sword", 4, 3, Item.ItemType.Weapon));
     }
-
 }

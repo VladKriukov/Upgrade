@@ -1,25 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    [SerializeField] GameObject inv;
-    [SerializeField] int daggerCost;
-    [SerializeField] int swordCost;
-    [SerializeField] int healthPotionCost;
-    [SerializeField] int upgradeBackpackCost;
-    int playerBalance;
+    [SerializeField] private GameObject inv;
+    [SerializeField] private int daggerCost;
+    [SerializeField] private int swordCost;
+    [SerializeField] private int healthPotionCost;
+    [SerializeField] private int upgradeBackpackCost;
+    private int playerBalance;
 
-    void Start()
+    private void Start()
     {
         playerBalance = 10; //GameManager.score;
-    }
-
-    // Update is called once per frame
-    public void Update()
-    {
-        
     }
 
     public void BuyDagger()
