@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MainMenu/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenu/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/MainMenu/Scenes/options.unity
+    path: Assets/Scenes/MainMenu/Scenes/options.unity
     guid: 943413b9d4a103a4a96518ec02f624f1
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_1.unity
@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_5.unity
     guid: 6a4dd991f806a1745afd50262d1510eb
+  - enabled: 1
+    path: Assets/Resources/Puzzles/Puzzle 2/Puzzle 2.unity
+    guid: 406945a35b20dec4fb27c4d946dece0e
+  - enabled: 1
+    path: Assets/Scenes/BlockOutLevels/DSLevel 1.unity
+    guid: a884910ae49a47e4aba03f57a4229fc0
   m_configObjects: {}
