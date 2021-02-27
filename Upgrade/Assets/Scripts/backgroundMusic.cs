@@ -1,15 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class backgroundMusic : MonoBehaviour
+public class BackgroundMusic : MonoBehaviour
 {
     private AudioSource audioSource;
 
-    void Start()
+    private void Start()
     {
-        GameObject.FindGameObjectWithTag("Music").GetComponent<backgroundMusic>().PlayMusic();
+        GameObject.FindGameObjectWithTag("Music").GetComponent<BackgroundMusic>().PlayMusic();
     }
+
     private void Awake()
     {
         DontDestroyOnLoad(transform.gameObject);

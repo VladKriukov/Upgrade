@@ -2,8 +2,7 @@
 
 public class Leg : MonoBehaviour
 {
-
-    StickmanController stickmanController;
+    private StickmanController stickmanController;
 
     private void Awake()
     {
@@ -20,5 +19,4 @@ public class Leg : MonoBehaviour
     {
         stickmanController.collisions--;
     }
-
 }

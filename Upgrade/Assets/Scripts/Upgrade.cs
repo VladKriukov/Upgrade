@@ -2,8 +2,7 @@
 
 public class Upgrade : MonoBehaviour
 {
-
-    [SerializeField] int requredAmount;
+    [SerializeField] private int requredAmount;
 
     public bool CanUpgrade()
     {
@@ -16,5 +15,4 @@ public class Upgrade : MonoBehaviour
             return false;
         }
     }
-
 }
