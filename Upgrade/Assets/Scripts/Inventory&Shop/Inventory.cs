@@ -38,7 +38,7 @@ public class Inventory : MonoBehaviour
 
     private void OnGUI()
     {
-        if (GUI.Button(new Rect(40, 400, 100, 40), "save"))
+        /*if (GUI.Button(new Rect(40, 400, 100, 40), "save"))
         {
             saveinventory();
         }
@@ -49,7 +49,7 @@ public class Inventory : MonoBehaviour
         if (GUI.Button(new Rect(40, 350, 100, 40), "Add"))
         {
             Additem(3);
-        }
+        }*/
         tooltip = "";
         GUI.skin = skin;
 
