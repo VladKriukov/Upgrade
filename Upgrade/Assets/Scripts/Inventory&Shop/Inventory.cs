@@ -18,6 +18,8 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] Text openTip;
     [SerializeField] Canvas canvas;
+    [SerializeField] int paddingX;
+    [SerializeField] int paddingY;
 
     private void Start()
     {
@@ -86,7 +88,7 @@ public class Inventory : MonoBehaviour
         {
             for (int x = 0; x < slotsx; x++)
             {
-                Rect slotrect = new Rect((x * 70)+20, (y * 70)+20, 60, 60);
+                Rect slotrect = new Rect((x * 70)+paddingX, (y * 70)+paddingY, 60, 60);
                 GUI.Box(new Rect(slotrect), "", skin.GetStyle("slot"));
                 slots[i] = inventory[i];
                 Item item = slots[i];
