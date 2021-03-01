@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class Inventory : MonoBehaviour
     private bool draggingitem;
     private Item draggeditem;
     private int previndex;
+
+    [SerializeField] Text openTip;
+    [SerializeField] Canvas canvas;
 
     private void Start()
     {
@@ -56,14 +60,16 @@ public class Inventory : MonoBehaviour
         if (showinventory)
         {
             DrawInventory();
+            openTip.text = "close inventory ( i )";
         }
         else
         {
             showtooltip = false;
+            openTip.text = "open inventory ( i )";
         }
         if (showtooltip)
         {
-            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 200, 120), tooltip, skin.GetStyle("tooltip"));
+            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 210, 150), tooltip, skin.GetStyle("tooltip"));
         }
         if (draggingitem)
         {
@@ -75,6 +81,7 @@ public class Inventory : MonoBehaviour
     {
         Event e = Event.current;
         int i = 0;
+
         for (int y = 0; y < slotsy; y++)
         {
             for (int x = 0; x < slotsx; x++)
@@ -193,8 +200,20 @@ public class Inventory : MonoBehaviour
 
         switch (item)
         {
-            case "Health Potion"://use the id to set the consumables
+            case "Health Potion": //use the id to set the consumables
                 {
+                    break;
+                }
+            case "Upgraded Backpack":
+                {
+                    slotsy += 1;
+
+                    for (int i = 0; i < (slotsx * slotsy); i++)
+                    {
+                        slots.Add(new Item());
+                        inventory.Add(new Item());
+                    }
+
                     break;
                 }
         }

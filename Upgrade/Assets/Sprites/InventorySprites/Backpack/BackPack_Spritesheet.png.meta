@@ -1,0 +1,2242 @@
+fileFormatVersion: 2
+guid: 0a5644edb231126428bd7c60091a62a8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 49171878068467226
+    second: BackPack_Spritesheet_0
+  - first:
+      213: -4116926290238551193
+    second: BackPack_Spritesheet_1
+  - first:
+      213: -2021683251062756389
+    second: BackPack_Spritesheet_2
+  - first:
+      213: 6315920702686261975
+    second: BackPack_Spritesheet_3
+  - first:
+      213: 1389325935292156550
+    second: BackPack_Spritesheet_4
+  - first:
+      213: -3619798854192588334
+    second: BackPack_Spritesheet_5
+  - first:
+      213: -7353597493313039284
+    second: BackPack_Spritesheet_6
+  - first:
+      213: -6507605274538186432
+    second: BackPack_Spritesheet_7
+  - first:
+      213: 5962392101275024831
+    second: BackPack_Spritesheet_8
+  - first:
+      213: -7231663731910261458
+    second: BackPack_Spritesheet_9
+  - first:
+      213: 8858478615979649363
+    second: BackPack_Spritesheet_10
+  - first:
+      213: -5174793535927924284
+    second: BackPack_Spritesheet_11
+  - first:
+      213: 7030802257097937775
+    second: BackPack_Spritesheet_12
+  - first:
+      213: -3469110570126386272
+    second: BackPack_Spritesheet_13
+  - first:
+      213: 396762677095505364
+    second: BackPack_Spritesheet_14
+  - first:
+      213: -258359707680874796
+    second: BackPack_Spritesheet_15
+  - first:
+      213: -4607996505626564619
+    second: BackPack_Spritesheet_16
+  - first:
+      213: -3009699944353268618
+    second: BackPack_Spritesheet_17
+  - first:
+      213: -4148204526886658946
+    second: BackPack_Spritesheet_18
+  - first:
+      213: -6255967224340570846
+    second: BackPack_Spritesheet_19
+  - first:
+      213: -1125700988111609479
+    second: BackPack_Spritesheet_20
+  - first:
+      213: 2258359826949625141
+    second: BackPack_Spritesheet_21
+  - first:
+      213: -1611052578153990787
+    second: BackPack_Spritesheet_22
+  - first:
+      213: -6341378924088785739
+    second: BackPack_Spritesheet_23
+  - first:
+      213: -6460111336936226224
+    second: BackPack_Spritesheet_24
+  - first:
+      213: -1970067490897021223
+    second: BackPack_Spritesheet_25
+  - first:
+      213: -3600760692472102990
+    second: BackPack_Spritesheet_26
+  - first:
+      213: 7723817196985970032
+    second: BackPack_Spritesheet_27
+  - first:
+      213: -7366643389676527084
+    second: BackPack_Spritesheet_28
+  - first:
+      213: -4743444047626345030
+    second: BackPack_Spritesheet_29
+  - first:
+      213: -5385835015724520242
+    second: BackPack_Spritesheet_30
+  - first:
+      213: -3113079978307533985
+    second: BackPack_Spritesheet_31
+  - first:
+      213: -4806861132208352801
+    second: BackPack_Spritesheet_32
+  - first:
+      213: 8652958011889796622
+    second: BackPack_Spritesheet_33
+  - first:
+      213: 2124456767351337048
+    second: BackPack_Spritesheet_34
+  - first:
+      213: -5699906538455687845
+    second: BackPack_Spritesheet_35
+  - first:
+      213: -6218173489580952733
+    second: BackPack_Spritesheet_36
+  - first:
+      213: 130413729483369085
+    second: BackPack_Spritesheet_37
+  - first:
+      213: 5738388582679594356
+    second: BackPack_Spritesheet_38
+  - first:
+      213: 8845094712068497746
+    second: BackPack_Spritesheet_39
+  - first:
+      213: -359652784809534127
+    second: BackPack_Spritesheet_40
+  - first:
+      213: -8177640265122859427
+    second: BackPack_Spritesheet_41
+  - first:
+      213: -1837093928190983015
+    second: BackPack_Spritesheet_42
+  - first:
+      213: 7731393580184593985
+    second: BackPack_Spritesheet_43
+  - first:
+      213: 834556212946099879
+    second: BackPack_Spritesheet_44
+  - first:
+      213: 8328615118241574724
+    second: BackPack_Spritesheet_45
+  - first:
+      213: 3921491299195414193
+    second: BackPack_Spritesheet_46
+  - first:
+      213: 7439442313115245187
+    second: BackPack_Spritesheet_47
+  - first:
+      213: -5786536863889622438
+    second: BackPack_Spritesheet_48
+  - first:
+      213: -3389901836817792506
+    second: BackPack_Spritesheet_49
+  - first:
+      213: -8184341340858775204
+    second: BackPack_Spritesheet_50
+  - first:
+      213: -2060865535883665253
+    second: BackPack_Spritesheet_51
+  - first:
+      213: 995388111672884053
+    second: BackPack_Spritesheet_52
+  - first:
+      213: 2196893773225342855
+    second: BackPack_Spritesheet_53
+  - first:
+      213: -8937432428924944387
+    second: BackPack_Spritesheet_54
+  - first:
+      213: -7399659611255153024
+    second: BackPack_Spritesheet_55
+  - first:
+      213: 636563956099279212
+    second: BackPack_Spritesheet_56
+  - first:
+      213: 6563205897933283480
+    second: BackPack_Spritesheet_57
+  - first:
+      213: 5798416061702605672
+    second: BackPack_Spritesheet_58
+  - first:
+      213: -6601716086608477004
+    second: BackPack_Spritesheet_59
+  - first:
+      213: -7001191778641195569
+    second: BackPack_Spritesheet_60
+  - first:
+      213: -1247939336340484854
+    second: BackPack_Spritesheet_61
+  - first:
+      213: -7187015569339282287
+    second: BackPack_Spritesheet_62
+  - first:
+      213: -4370292171461613931
+    second: BackPack_Spritesheet_63
+  - first:
+      213: -2476652920995579527
+    second: BackPack_Spritesheet_64
+  - first:
+      213: 5002784751033564430
+    second: BackPack_Spritesheet_65
+  - first:
+      213: -2537978655123026535
+    second: BackPack_Spritesheet_66
+  - first:
+      213: 7961086983983589390
+    second: BackPack_Spritesheet_67
+  - first:
+      213: -4520925138250865831
+    second: BackPack_Spritesheet_68
+  - first:
+      213: -5683564508267748398
+    second: BackPack_Spritesheet_69
+  - first:
+      213: -6098982949306033112
+    second: BackPack_Spritesheet_70
+  - first:
+      213: 811430668037870180
+    second: BackPack_Spritesheet_71
+  - first:
+      213: 3963053206220433592
+    second: BackPack_Spritesheet_72
+  - first:
+      213: -1733471521791399700
+    second: BackPack_Spritesheet_73
+  - first:
+      213: 905482849350201952
+    second: BackPack_Spritesheet_74
+  - first:
+      213: -4584168512326108055
+    second: BackPack_Spritesheet_75
+  - first:
+      213: -4455053245451865260
+    second: BackPack_Spritesheet_76
+  - first:
+      213: 9807340321899647
+    second: BackPack_Spritesheet_77
+  - first:
+      213: -8210946372244332731
+    second: BackPack_Spritesheet_78
+  - first:
+      213: -6978082495694116904
+    second: BackPack_Spritesheet_79
+  - first:
+      213: -7566204230476099422
+    second: BackPack_Spritesheet_80
+  - first:
+      213: -2109973435084409652
+    second: BackPack_Spritesheet_81
+  - first:
+      213: 415163393106284073
+    second: BackPack_Spritesheet_82
+  - first:
+      213: 6324379289970996058
+    second: BackPack_Spritesheet_83
+  - first:
+      213: 4413403865700475718
+    second: BackPack_Spritesheet_84
+  - first:
+      213: -4157762660358581707
+    second: BackPack_Spritesheet_85
+  - first:
+      213: 8908726717335520955
+    second: BackPack_Spritesheet_86
+  - first:
+      213: 1807333860433921743
+    second: BackPack_Spritesheet_87
+  - first:
+      213: -7448692783704885142
+    second: BackPack_Spritesheet_88
+  - first:
+      213: 6525643407098607
+    second: BackPack_Spritesheet_89
+  - first:
+      213: 4665547286282094285
+    second: BackPack_Spritesheet_90
+  - first:
+      213: -8157960900481716412
+    second: BackPack_Spritesheet_91
+  - first:
+      213: 8644733800190372385
+    second: BackPack_Spritesheet_92
+  - first:
+      213: 8758780897341432013
+    second: BackPack_Spritesheet_93
+  - first:
+      213: -1983269644836288187
+    second: BackPack_Spritesheet_94
+  - first:
+      213: -262358132446333772
+    second: BackPack_Spritesheet_95
+  - first:
+      213: 6155982495266678101
+    second: BackPack_Spritesheet_96
+  - first:
+      213: 5019487876136195169
+    second: BackPack_Spritesheet_97
+  - first:
+      213: 3273059971043625136
+    second: BackPack_Spritesheet_98
+  - first:
+      213: 8016711708474813060
+    second: BackPack_Spritesheet_99
+  - first:
+      213: 5537268387508289596
+    second: BackPack_Spritesheet_100
+  - first:
+      213: -6338214597960663595
+    second: BackPack_Spritesheet_101
+  - first:
+      213: 4787318651818643212
+    second: BackPack_Spritesheet_102
+  - first:
+      213: 4360509984925128502
+    second: BackPack_Spritesheet_103
+  - first:
+      213: -7289099482776323293
+    second: BackPack_Spritesheet_104
+  - first:
+      213: -372401770355546154
+    second: BackPack_Spritesheet_105
+  - first:
+      213: 692242597053921518
+    second: BackPack_Spritesheet_106
+  - first:
+      213: 559234241264718267
+    second: BackPack_Spritesheet_107
+  - first:
+      213: -2791307460431228146
+    second: BackPack_Spritesheet_108
+  - first:
+      213: 7997585211333663603
+    second: BackPack_Spritesheet_109
+  - first:
+      213: 3693136071153294476
+    second: BackPack_Spritesheet_110
+  - first:
+      213: 3136667286422313689
+    second: BackPack_Spritesheet_111
+  - first:
+      213: -8452037298208058913
+    second: BackPack_Spritesheet_112
+  - first:
+      213: -7455840772140225983
+    second: BackPack_Spritesheet_113
+  - first:
+      213: 2795609273949209475
+    second: BackPack_Spritesheet_114
+  - first:
+      213: 7645279159446540731
+    second: BackPack_Spritesheet_115
+  - first:
+      213: -2308875657897114171
+    second: BackPack_Spritesheet_116
+  - first:
+      213: -710908842839945099
+    second: BackPack_Spritesheet_117
+  - first:
+      213: 2324124590991489729
+    second: BackPack_Spritesheet_118
+  - first:
+      213: 8145951670259788655
+    second: BackPack_Spritesheet_119
+  - first:
+      213: 4383423251749597863
+    second: BackPack_Spritesheet_120
+  - first:
+      213: -4518691560766277396
+    second: BackPack_Spritesheet_121
+  - first:
+      213: -3514078142709536557
+    second: BackPack_Spritesheet_122
+  - first:
+      213: -7529880515034531917
+    second: BackPack_Spritesheet_123
+  - first:
+      213: -4655789749593605829
+    second: BackPack_Spritesheet_124
+  - first:
+      213: 6744839715918637247
+    second: BackPack_Spritesheet_125
+  - first:
+      213: 6779273135958164949
+    second: BackPack_Spritesheet_126
+  - first:
+      213: -9203695825952934080
+    second: BackPack_Spritesheet_127
+  - first:
+      213: -8940277217630683218
+    second: BackPack_Spritesheet_128
+  - first:
+      213: 8429640071195621521
+    second: BackPack_Spritesheet_129
+  - first:
+      213: -2408485133933156249
+    second: BackPack_Spritesheet_130
+  - first:
+      213: 7016372238782206247
+    second: BackPack_Spritesheet_131
+  - first:
+      213: 1746219215825986022
+    second: BackPack_Spritesheet_132
+  - first:
+      213: -1316349968663816830
+    second: BackPack_Spritesheet_133
+  - first:
+      213: -268347915320270482
+    second: BackPack_Spritesheet_134
+  - first:
+      213: 968050932555562780
+    second: BackPack_Spritesheet_135
+  - first:
+      213: -9166382514684229355
+    second: BackPack_Spritesheet_136
+  - first:
+      213: -476743511364576981
+    second: BackPack_Spritesheet_137
+  - first:
+      213: -5484544458247363955
+    second: BackPack_Spritesheet_138
+  - first:
+      213: -6027641588918913902
+    second: BackPack_Spritesheet_139
+  - first:
+      213: 4050730009186721828
+    second: BackPack_Spritesheet_140
+  - first:
+      213: -4959553161988896626
+    second: BackPack_Spritesheet_141
+  - first:
+      213: 5657888636285842382
+    second: BackPack_Spritesheet_142
+  - first:
+      213: 5788821058035137743
+    second: BackPack_Spritesheet_143
+  - first:
+      213: 6702703153745828077
+    second: BackPack_Spritesheet_144
+  - first:
+      213: 4046968730374431479
+    second: BackPack_Spritesheet_145
+  - first:
+      213: -3904442050868357651
+    second: BackPack_Spritesheet_146
+  - first:
+      213: -3731562771941184362
+    second: BackPack_Spritesheet_147
+  - first:
+      213: 8732378043490920975
+    second: BackPack_Spritesheet_148
+  - first:
+      213: -1589918081310393905
+    second: BackPack_Spritesheet_149
+  - first:
+      213: 1948696556554515845
+    second: BackPack_Spritesheet_150
+  - first:
+      213: -8075770508695071332
+    second: BackPack_Spritesheet_151
+  - first:
+      213: 1525759276081697379
+    second: BackPack_Spritesheet_152
+  - first:
+      213: 1199711693735068597
+    second: BackPack_Spritesheet_153
+  - first:
+      213: -2385174910732463072
+    second: BackPack_Spritesheet_154
+  - first:
+      213: 820035635238823803
+    second: BackPack_Spritesheet_155
+  - first:
+      213: -444786925619918524
+    second: BackPack_Spritesheet_156
+  - first:
+      213: 1027581564168244068
+    second: BackPack_Spritesheet_157
+  - first:
+      213: 2613702655019801786
+    second: BackPack_Spritesheet_158
+  - first:
+      213: -4055255868748337384
+    second: BackPack_Spritesheet_159
+  - first:
+      213: 5775487271334983822
+    second: BackPack_Spritesheet_160
+  - first:
+      213: -7982514057087118616
+    second: BackPack_Spritesheet_161
+  - first:
+      213: -7029503699928279927
+    second: BackPack_Spritesheet_162
+  - first:
+      213: -7784941391450467835
+    second: BackPack_Spritesheet_163
+  - first:
+      213: -7519672472796454779
+    second: BackPack_Spritesheet_164
+  - first:
+      213: 9023724835289884375
+    second: BackPack_Spritesheet_165
+  - first:
+      213: 4641430225982509028
+    second: BackPack_Spritesheet_166
+  - first:
+      213: -9187747800878742925
+    second: BackPack_Spritesheet_167
+  - first:
+      213: -3468385617525943590
+    second: BackPack_Spritesheet_168
+  - first:
+      213: 5716731599319536476
+    second: BackPack_Spritesheet_169
+  - first:
+      213: 4201329207656949773
+    second: BackPack_Spritesheet_170
+  - first:
+      213: -4642343588155049528
+    second: BackPack_Spritesheet_171
+  - first:
+      213: 4769080089144936981
+    second: BackPack_Spritesheet_172
+  - first:
+      213: 5282248545930858909
+    second: BackPack_Spritesheet_173
+  - first:
+      213: 8421484306052152494
+    second: BackPack_Spritesheet_174
+  - first:
+      213: 3941511182700226448
+    second: BackPack_Spritesheet_175
+  - first:
+      213: 1427915962632053255
+    second: BackPack_Spritesheet_176
+  - first:
+      213: 2832574789573573299
+    second: BackPack_Spritesheet_177
+  - first:
+      213: 4093814323007448026
+    second: BackPack_Spritesheet_178
+  - first:
+      213: 5907525378956958152
+    second: BackPack_Spritesheet_179
+  - first:
+      213: 5696247500918430183
+    second: BackPack_Spritesheet_180
+  - first:
+      213: 8011592874568477931
+    second: BackPack_Spritesheet_181
+  - first:
+      213: 2274685990993774325
+    second: BackPack_Spritesheet_182
+  - first:
+      213: -5379818301650058150
+    second: BackPack_Spritesheet_183
+  - first:
+      213: -2235092140261638062
+    second: BackPack_Spritesheet_184
+  - first:
+      213: -1226175312406675057
+    second: BackPack_Spritesheet_185
+  - first:
+      213: 1185750517767815899
+    second: BackPack_Spritesheet_186
+  - first:
+      213: -4015448465176183857
+    second: BackPack_Spritesheet_187
+  - first:
+      213: -559186126902811555
+    second: BackPack_Spritesheet_188
+  - first:
+      213: -8181208737866163221
+    second: BackPack_Spritesheet_189
+  - first:
+      213: 8904871837464615771
+    second: BackPack_Spritesheet_190
+  - first:
+      213: 3298619340396891703
+    second: BackPack_Spritesheet_191
+  - first:
+      213: 1892988842563322116
+    second: BackPack_Spritesheet_192
+  - first:
+      213: -7760924451372469487
+    second: BackPack_Spritesheet_193
+  - first:
+      213: -6089547002332510344
+    second: BackPack_Spritesheet_194
+  - first:
+      213: -6027455963356564745
+    second: BackPack_Spritesheet_195
+  - first:
+      213: -7853437774155289492
+    second: BackPack_Spritesheet_196
+  - first:
+      213: 9050464848230019548
+    second: BackPack_Spritesheet_197
+  - first:
+      213: -5674010975436330385
+    second: BackPack_Spritesheet_198
+  - first:
+      213: -9010736595945496516
+    second: BackPack_Spritesheet_199
+  - first:
+      213: 7033486268547492231
+    second: BackPack_Spritesheet_200
+  - first:
+      213: 2665053310271228642
+    second: BackPack_Spritesheet_201
+  - first:
+      213: 7323707447906298483
+    second: BackPack_Spritesheet_202
+  - first:
+      213: -2512626111594658710
+    second: BackPack_Spritesheet_203
+  - first:
+      213: 5538171201195199709
+    second: BackPack_Spritesheet_204
+  - first:
+      213: -1681260884005012149
+    second: BackPack_Spritesheet_205
+  - first:
+      213: -7450745168865099433
+    second: BackPack_Spritesheet_206
+  - first:
+      213: -3641657816164426774
+    second: BackPack_Spritesheet_207
+  - first:
+      213: 2159196730922622053
+    second: BackPack_Spritesheet_208
+  - first:
+      213: 2916104421767543617
+    second: BackPack_Spritesheet_209
+  - first:
+      213: 2793261606600393609
+    second: BackPack_Spritesheet_210
+  - first:
+      213: -3017392622866090591
+    second: BackPack_Spritesheet_211
+  - first:
+      213: -6177267078672080992
+    second: BackPack_Spritesheet_212
+  - first:
+      213: -5235441045781568563
+    second: BackPack_Spritesheet_213
+  - first:
+      213: -5770338839182199071
+    second: BackPack_Spritesheet_214
+  - first:
+      213: -1013560859872131378
+    second: BackPack_Spritesheet_215
+  - first:
+      213: -1845170544590889906
+    second: BackPack_Spritesheet_216
+  - first:
+      213: 4548414052163188636
+    second: BackPack_Spritesheet_217
+  - first:
+      213: -6717402574141150714
+    second: BackPack_Spritesheet_218
+  - first:
+      213: -2249136595573712955
+    second: BackPack_Spritesheet_219
+  - first:
+      213: 8457497502818579344
+    second: BackPack_Spritesheet_220
+  - first:
+      213: 5235986599908489508
+    second: BackPack_Spritesheet_221
+  - first:
+      213: 3567687743062690778
+    second: BackPack_Spritesheet_222
+  - first:
+      213: 3201016467426439855
+    second: BackPack_Spritesheet_223
+  - first:
+      213: -8066142017270375061
+    second: BackPack_Spritesheet_224
+  - first:
+      213: 3305523447861753235
+    second: BackPack_Spritesheet_225
+  - first:
+      213: -8844331398542470070
+    second: BackPack_Spritesheet_226
+  - first:
+      213: 1255106110680346941
+    second: BackPack_Spritesheet_227
+  - first:
+      213: 6716269517414746943
+    second: BackPack_Spritesheet_228
+  - first:
+      213: 8083430384781509650
+    second: BackPack_Spritesheet_229
+  - first:
+      213: -3537730550861930201
+    second: BackPack_Spritesheet_230
+  - first:
+      213: 1930953879327107252
+    second: BackPack_Spritesheet_231
+  - first:
+      213: -1351659959002281099
+    second: BackPack_Spritesheet_232
+  - first:
+      213: -7561660588754272061
+    second: BackPack_Spritesheet_233
+  - first:
+      213: 7691280806313568
+    second: BackPack_Spritesheet_234
+  - first:
+      213: 7163609210429098827
+    second: BackPack_Spritesheet_235
+  - first:
+      213: 1134800045505575794
+    second: BackPack_Spritesheet_236
+  - first:
+      213: 4136843374189307900
+    second: BackPack_Spritesheet_237
+  - first:
+      213: 7720705375317506155
+    second: BackPack_Spritesheet_238
+  - first:
+      213: -7838807055907419312
+    second: BackPack_Spritesheet_239
+  - first:
+      213: -5788611289097133219
+    second: BackPack_Spritesheet_240
+  - first:
+      213: -5446545026676588263
+    second: BackPack_Spritesheet_241
+  - first:
+      213: 4252196279334468627
+    second: BackPack_Spritesheet_242
+  - first:
+      213: 6274985908895239654
+    second: BackPack_Spritesheet_243
+  - first:
+      213: -4832460198745662704
+    second: BackPack_Spritesheet_244
+  - first:
+      213: -6005244337546014131
+    second: BackPack_Spritesheet_245
+  - first:
+      213: -7439413783879134118
+    second: BackPack_Spritesheet_246
+  - first:
+      213: 4581084648028086096
+    second: BackPack_Spritesheet_247
+  - first:
+      213: -4654004813163048770
+    second: BackPack_Spritesheet_248
+  - first:
+      213: 2928657415034242117
+    second: BackPack_Spritesheet_249
+  - first:
+      213: 6079833105421788256
+    second: BackPack_Spritesheet_250
+  - first:
+      213: 1285058335805554618
+    second: BackPack_Spritesheet_251
+  - first:
+      213: 5656178100421484424
+    second: BackPack_Spritesheet_252
+  - first:
+      213: 636982985444009972
+    second: BackPack_Spritesheet_253
+  - first:
+      213: 3475333738732672432
+    second: BackPack_Spritesheet_254
+  - first:
+      213: -8996828432163351829
+    second: BackPack_Spritesheet_255
+  - first:
+      213: -4742243895687815002
+    second: BackPack_Spritesheet_256
+  - first:
+      213: 2445677733770633058
+    second: BackPack_Spritesheet_257
+  - first:
+      213: -1766589785555503660
+    second: BackPack_Spritesheet_258
+  - first:
+      213: 6883171621782907823
+    second: BackPack_Spritesheet_259
+  - first:
+      213: -3818420113659184052
+    second: BackPack_Spritesheet_260
+  - first:
+      213: -961923852672828395
+    second: BackPack_Spritesheet_261
+  - first:
+      213: -48050315018724611
+    second: BackPack_Spritesheet_262
+  - first:
+      213: 8952329260458479145
+    second: BackPack_Spritesheet_263
+  - first:
+      213: -1453074941685778264
+    second: BackPack_Spritesheet_264
+  - first:
+      213: 4912316645327430812
+    second: BackPack_Spritesheet_265
+  - first:
+      213: 3029116169154056324
+    second: BackPack_Spritesheet_266
+  - first:
+      213: 8328805428328144592
+    second: BackPack_Spritesheet_267
+  - first:
+      213: -7683848632736751055
+    second: BackPack_Spritesheet_268
+  - first:
+      213: 2138860839450437635
+    second: BackPack_Spritesheet_269
+  - first:
+      213: 2627662490723366598
+    second: BackPack_Spritesheet_270
+  - first:
+      213: 2916482078121039077
+    second: BackPack_Spritesheet_271
+  - first:
+      213: 3701276602026132994
+    second: BackPack_Spritesheet_272
+  - first:
+      213: -802832808459020063
+    second: BackPack_Spritesheet_273
+  - first:
+      213: -20121935087051705
+    second: BackPack_Spritesheet_274
+  - first:
+      213: -4749333100206462622
+    second: BackPack_Spritesheet_275
+  - first:
+      213: -2391457683436669562
+    second: BackPack_Spritesheet_276
+  - first:
+      213: -5872033257420311198
+    second: BackPack_Spritesheet_277
+  - first:
+      213: -5974554163378231593
+    second: BackPack_Spritesheet_278
+  - first:
+      213: -28882298135435788
+    second: BackPack_Spritesheet_279
+  - first:
+      213: -4284528965428546641
+    second: BackPack_Spritesheet_280
+  - first:
+      213: -5870627825274636419
+    second: BackPack_Spritesheet_281
+  - first:
+      213: 3846811198009545463
+    second: BackPack_Spritesheet_282
+  - first:
+      213: 5796364482192199347
+    second: BackPack_Spritesheet_283
+  - first:
+      213: -7538353252358667994
+    second: BackPack_Spritesheet_284
+  - first:
+      213: -2086288817390383437
+    second: BackPack_Spritesheet_285
+  - first:
+      213: 6900119640197721076
+    second: BackPack_Spritesheet_286
+  - first:
+      213: 3533136357319625767
+    second: BackPack_Spritesheet_287
+  - first:
+      213: 8374021601177206778
+    second: BackPack_Spritesheet_288
+  - first:
+      213: 1291450050662504960
+    second: BackPack_Spritesheet_289
+  - first:
+      213: 8913209261432302932
+    second: BackPack_Spritesheet_290
+  - first:
+      213: 8232787746696118898
+    second: BackPack_Spritesheet_291
+  - first:
+      213: 6499781439252690606
+    second: BackPack_Spritesheet_292
+  - first:
+      213: -2210110913977663626
+    second: BackPack_Spritesheet_293
+  - first:
+      213: -7484430548717144019
+    second: BackPack_Spritesheet_294
+  - first:
+      213: -5163512286264358383
+    second: BackPack_Spritesheet_295
+  - first:
+      213: -5938842455152681006
+    second: BackPack_Spritesheet_296
+  - first:
+      213: 4872730301072246211
+    second: BackPack_Spritesheet_297
+  - first:
+      213: -2757182410774096754
+    second: BackPack_Spritesheet_298
+  - first:
+      213: 7692803389419019325
+    second: BackPack_Spritesheet_299
+  - first:
+      213: 5390177888926642556
+    second: BackPack_Spritesheet_300
+  - first:
+      213: 3101521211239795185
+    second: BackPack_Spritesheet_301
+  - first:
+      213: 6521889889757673857
+    second: BackPack_Spritesheet_302
+  - first:
+      213: 5208659815208117488
+    second: BackPack_Spritesheet_303
+  - first:
+      213: -1075010644118160244
+    second: BackPack_Spritesheet_304
+  - first:
+      213: -2746461947429907435
+    second: BackPack_Spritesheet_305
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16b5350091bea000800000000000000
+      internalID: 49171878068467226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b4dd7f95dbdd6c0800000000000000
+      internalID: -4116926290238551193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb2c046bc981f3e0800000000000000
+      internalID: -2021683251062756389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d276297a68a6a750800000000000000
+      internalID: 6315920702686261975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a8352c390e74310800000000000000
+      internalID: 1389325935292156550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d91c71ee14e3cdc0800000000000000
+      internalID: -3619798854192588334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c449fd57a06c2f990800000000000000
+      internalID: -7353597493313039284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 2000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04961b84b7750b5a0800000000000000
+      internalID: -6507605274538186432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdb718a60caeb250800000000000000
+      internalID: 5962392101275024831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 2000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25c96c9628f3ab90800000000000000
+      internalID: -7231663731910261458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3596cd3fd53afea70800000000000000
+      internalID: 8858478615979649363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9470142b07f28b0800000000000000
+      internalID: -5174793535927924284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63565ce66d629160800000000000000
+      internalID: 7030802257097937775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab501d015e3bdfc0800000000000000
+      internalID: -3469110570126386272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd196c7d85918500800000000000000
+      internalID: 396762677095505364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de5867f63f1a6cf0800000000000000
+      internalID: -258359707680874796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f723e3a79b1d00c0800000000000000
+      internalID: -4607996505626564619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c7f40c8d56b36d0800000000000000
+      internalID: -3009699944353268618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7cd04ff5fd9e66c0800000000000000
+      internalID: -4148204526886658946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d91ba74f65e29a0800000000000000
+      internalID: -6255967224340570846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9712d406ae4b060f0800000000000000
+      internalID: -1125700988111609479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535585c1c4e475f10800000000000000
+      internalID: 2258359826949625141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7577a4473464a9e0800000000000000
+      internalID: -1611052578153990787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b40a837775eef7a0800000000000000
+      internalID: -6341378924088785739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052417857f21956a0800000000000000
+      internalID: -6460111336936226224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6b98d0e0ae8a4e0800000000000000
+      internalID: -1970067490897021223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfb2045a37870ec0800000000000000
+      internalID: -3600760692472102990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07de66071d2803b60800000000000000
+      internalID: 7723817196985970032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412e9530edc64c990800000000000000
+      internalID: -7366643389676527084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab56a4145c6eb2eb0800000000000000
+      internalID: -4743444047626345030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc21eca69ba145b0800000000000000
+      internalID: -5385835015724520242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f534997e04e1cc4d0800000000000000
+      internalID: -3113079978307533985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1d612a4499a4db0800000000000000
+      internalID: -4806861132208352801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06cf0b677b751870800000000000000
+      internalID: 8652958011889796622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850b6ae8c269b7d10800000000000000
+      internalID: 2124456767351337048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d1c62e33dd5e0b0800000000000000
+      internalID: -5699906538455687845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363b6c1182c94b9a0800000000000000
+      internalID: -6218173489580952733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7aa0b398925fc100800000000000000
+      internalID: 130413729483369085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47546cd330ad2af40800000000000000
+      internalID: 5738388582679594356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 251678df6c610ca70800000000000000
+      internalID: 8845094712068497746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d92fe92b1420bf0800000000000000
+      internalID: -359652784809534127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56bb60818f238e80800000000000000
+      internalID: -8177640265122859427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994462f3ec45186e0800000000000000
+      internalID: -1837093928190983015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14663ad9f7d6b4b60800000000000000
+      internalID: 7731393580184593985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae5fb93470f49b00800000000000000
+      internalID: 834556212946099879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44facb9b25f259370800000000000000
+      internalID: 8328615118241574724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6e3564f8feb6630800000000000000
+      internalID: 3921491299195414193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a9e303e553e3760800000000000000
+      internalID: 7439442313115245187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5af724716712bfa0800000000000000
+      internalID: -5786536863889622438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60208096d36a4f0d0800000000000000
+      internalID: -3389901836817792506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c598199b9e06b6e80800000000000000
+      internalID: -8184341340858775204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b902fcbc6b55663e0800000000000000
+      internalID: -2060865535883665253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bb8e9b63450dd00800000000000000
+      internalID: 995388111672884053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7873d524f3fec7e10800000000000000
+      internalID: 2196893773225342855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff3fd5fe8cd7f380800000000000000
+      internalID: -8937432428924944387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ed454e9c02f4990800000000000000
+      internalID: -7399659611255153024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c696d10ab8785d800800000000000000
+      internalID: 636563956099279212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackPack_Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890ef06adf0351b50800000000000000
+      internalID: 6563205897933283480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -467,6 +467,8 @@ MonoBehaviour:
   skin: {fileID: 11400000, guid: d6392ff0687f1404cbd9044bdcda1646, type: 2}
   inventory: []
   slots: []
+  openTip: {fileID: 606408554}
+  canvas: {fileID: 643641913}
 --- !u!4 &342570812
 Transform:
   m_ObjectHideFlags: 0
@@ -704,6 +706,7 @@ GameObject:
   - component: {fileID: 606408553}
   - component: {fileID: 606408555}
   - component: {fileID: 606408554}
+  - component: {fileID: 606408556}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -727,8 +730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -395.1, y: -369}
-  m_SizeDelta: {x: -790.1184, y: -736}
+  m_AnchoredPosition: {x: -363, y: -355}
+  m_SizeDelta: {x: -746.29034, y: -736}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &606408554
 MonoBehaviour:
@@ -752,12 +755,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a09146efa326b8048b10dfc83ae204e2, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -772,6 +775,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606408552}
   m_CullTransparentMesh: 0
+--- !u!114 &606408556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606408552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &630636826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1251,7 @@ GameObject:
   - component: {fileID: 962385692}
   - component: {fileID: 962385694}
   - component: {fileID: 962385693}
+  - component: {fileID: 962385695}
   m_Layer: 5
   m_Name: Shop Text
   m_TagString: Untagged
@@ -1301,6 +1320,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962385691}
   m_CullTransparentMesh: 0
+--- !u!114 &962385695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962385691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1021488023
 GameObject:
   m_ObjectHideFlags: 0

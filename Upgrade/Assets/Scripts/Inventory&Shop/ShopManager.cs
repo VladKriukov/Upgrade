@@ -14,7 +14,7 @@ public class ShopManager : MonoBehaviour
     private void Start()
     {
        
-        playerBalance = 10; //GameManager.score;
+        playerBalance = 20; //GameManager.score;
         currentBalance.text = playerBalance.ToString();
     }
 
@@ -25,6 +25,7 @@ public class ShopManager : MonoBehaviour
             inv.GetComponent<Inventory>().Additem(0);
             playerBalance -= daggerCost;
         }
+        currentBalance.text = playerBalance.ToString();
     }
     
     public void BuySword()
@@ -34,6 +35,7 @@ public class ShopManager : MonoBehaviour
             inv.GetComponent<Inventory>().Additem(6);
             playerBalance -= swordCost;
         }
+        currentBalance.text = playerBalance.ToString();
     }
 
     public void GiveHealthPotion()
@@ -43,6 +45,7 @@ public class ShopManager : MonoBehaviour
             inv.GetComponent<Inventory>().Additem(2);
             playerBalance -= healthPotionCost;
         }
+        currentBalance.text = playerBalance.ToString();
     }
 
     public void UpgradeBackpack()
@@ -52,5 +55,6 @@ public class ShopManager : MonoBehaviour
             inv.GetComponent<Inventory>().Additem(5);
             playerBalance -= upgradeBackpackCost;
         }
+        currentBalance.text = playerBalance.ToString();
     }
 }
