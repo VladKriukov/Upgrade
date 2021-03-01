@@ -204,7 +204,7 @@ public class Inventory : MonoBehaviour
                 {
                     break;
                 }
-            case "Upgraded Backpack":
+            case "Backpack Upgrade":
                 {
                     slotsy += 1;
 
