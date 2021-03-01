@@ -67,7 +67,7 @@ public class Inventory : MonoBehaviour
         }
         if (draggingitem)
         {
-            GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), draggeditem.itemIcon);
+            GUI.DrawTexture(new Rect(Event.current.mousePosition.x-25, Event.current.mousePosition.y-25, 50, 50), draggeditem.itemIcon);
         }
     }
 

@@ -2,11 +2,11 @@
 
 public class ShopManager : MonoBehaviour
 {
-    [SerializeField] private GameObject inv;
-    [SerializeField] private int daggerCost;
-    [SerializeField] private int swordCost;
-    [SerializeField] private int healthPotionCost;
-    [SerializeField] private int upgradeBackpackCost;
+    [SerializeField] GameObject inv;
+    [SerializeField] int daggerCost;
+    [SerializeField] int swordCost;
+    [SerializeField] int healthPotionCost;
+    [SerializeField] int upgradeBackpackCost;
     private int playerBalance;
 
     private void Start()
@@ -22,7 +22,7 @@ public class ShopManager : MonoBehaviour
             playerBalance -= daggerCost;
         }
     }
-
+    
     public void BuySword()
     {
         if (playerBalance >= swordCost)
@@ -43,6 +43,10 @@ public class ShopManager : MonoBehaviour
 
     public void UpgradeBackpack()
     {
-
+        if (playerBalance >= upgradeBackpackCost)
+        {
+            inv.GetComponent<Inventory>().Additem(5);
+            playerBalance -= upgradeBackpackCost;
+        }
     }
 }
