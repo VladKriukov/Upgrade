@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopManager : MonoBehaviour
 {
@@ -7,11 +8,14 @@ public class ShopManager : MonoBehaviour
     [SerializeField] int swordCost;
     [SerializeField] int healthPotionCost;
     [SerializeField] int upgradeBackpackCost;
+    [SerializeField] Text currentBalance;
     private int playerBalance;
 
     private void Start()
     {
+       
         playerBalance = 10; //GameManager.score;
+        currentBalance.text = playerBalance.ToString();
     }
 
     public void BuyDagger()
