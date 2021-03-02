@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
     private Item draggeditem;
     private int previndex;
 
+
     [SerializeField] Text openTip;
     [SerializeField] Canvas canvas;
     [SerializeField] int paddingX;
