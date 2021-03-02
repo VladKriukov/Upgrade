@@ -68,11 +68,11 @@ public class Inventory : MonoBehaviour
         }
         if (showtooltip)
         {
-            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 210, 150), tooltip, skin.GetStyle("tooltip"));
+            GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y, 260, 200), tooltip, skin.GetStyle("tooltip"));
         }
         if (draggingitem)
         {
-            GUI.DrawTexture(new Rect(Event.current.mousePosition.x-25, Event.current.mousePosition.y-25, 50, 50), draggeditem.itemIcon);
+            GUI.DrawTexture(new Rect(Event.current.mousePosition.x-50, Event.current.mousePosition.y-50, 110, 110), draggeditem.itemIcon);
         }
     }
 
