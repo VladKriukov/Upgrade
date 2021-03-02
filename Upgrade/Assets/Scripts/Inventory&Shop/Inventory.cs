@@ -29,9 +29,6 @@ public class Inventory : MonoBehaviour
             inventory.Add(new Item());
         }
         database = GameObject.FindGameObjectWithTag("Item Database").GetComponent<ItemDatabase>();
-        Additem(1);
-        Additem(0);
-        Additem(2);
     }
 
     private void Update()
@@ -88,7 +85,7 @@ public class Inventory : MonoBehaviour
         {
             for (int x = 0; x < slotsx; x++)
             {
-                Rect slotrect = new Rect((x * 70)+paddingX, (y * 70)+paddingY, 60, 60);
+                Rect slotrect = new Rect((x * 120)+paddingX, (y * 120)+paddingY, 110, 110);
                 GUI.Box(new Rect(slotrect), "", skin.GetStyle("slot"));
                 slots[i] = inventory[i];
                 Item item = slots[i];
