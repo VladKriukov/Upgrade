@@ -897,7 +897,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: open inventory ( i )
+  m_Text: close shop ( e )
 --- !u!222 &606408555
 CanvasRenderer:
   m_ObjectHideFlags: 0

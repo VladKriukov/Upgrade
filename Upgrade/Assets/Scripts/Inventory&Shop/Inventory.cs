@@ -9,7 +9,8 @@ public class Inventory : MonoBehaviour
     public List<Item> inventory = new List<Item>();
     public List<Item> slots = new List<Item>();
     private ItemDatabase database;
-    private bool showinventory;
+    private bool showinventory=true;
+    private bool showShop = true;
     private bool showtooltip;
     private string tooltip;
     private bool draggingitem;
@@ -21,6 +22,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] Canvas canvas;
     [SerializeField] int paddingX;
     [SerializeField] int paddingY;
+
 
     private void Start()
     {
@@ -37,6 +39,11 @@ public class Inventory : MonoBehaviour
         if (Input.GetButtonDown("Inventory"))
         {
             showinventory = !showinventory;
+        }
+
+        if (Input.GetButtonDown("Shop"))
+        {
+            showShop = !showShop;
         }
     }
 
@@ -60,12 +67,11 @@ public class Inventory : MonoBehaviour
         if (showinventory)
         {
             DrawInventory();
-            openTip.text = "close inventory ( i )";
         }
         else
         {
             showtooltip = false;
-            openTip.text = "open inventory ( i )";
+            openTip.text = "open shop ( e )";
         }
         if (showtooltip)
         {
@@ -74,6 +80,22 @@ public class Inventory : MonoBehaviour
         if (draggingitem)
         {
             GUI.DrawTexture(new Rect(Event.current.mousePosition.x-50, Event.current.mousePosition.y-50, 110, 110), draggeditem.itemIcon);
+        }
+
+        if (showShop)
+        {
+            canvas.gameObject.SetActive(true);
+            openTip.text = "close shop ( e )";
+            showinventory = true;
+            Debug.Log("Rendering Shop");
+        }
+        else
+        {
+            canvas.gameObject.SetActive(false);
+            showinventory = false;
+            showShop = false;
+            Debug.Log("Hiding Shop");
+
         }
     }
 
