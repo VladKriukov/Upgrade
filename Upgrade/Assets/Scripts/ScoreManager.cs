@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
     private void Awake()
     {
         text = GetComponent<Text>();
+        UpdateScore();
     }
 
     private void OnDisable()
@@ -24,6 +25,11 @@ public class ScoreManager : MonoBehaviour
     private void PlayerManager_OnCollected(int amount)
     {
         GameManager.score += amount;
+        UpdateScore();
+    }
+
+    void UpdateScore()
+    {
         text.text = additionalText + GameManager.score;
     }
 }
