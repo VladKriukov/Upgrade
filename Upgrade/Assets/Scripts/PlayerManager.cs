@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Health))]
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float bouncerJumpExtra;
     private Collectable collectable;
     private Upgrade upgrade;
     private Vector2 respawnPoint;
+    private Health health;
 
     public delegate void Collect(int amount);
 
@@ -22,6 +24,7 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         respawnPoint = transform.position;
+        health = GetComponent<Health>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,15 +55,12 @@ public class PlayerManager : MonoBehaviour
             case "Danger":
                 Respawn();
                 break;
-
             case "Respawn":
                 respawnPoint = transform.position;
                 break;
-
             case "Bouncer":
                 GetComponent<Movement>().JumpUp(bouncerJumpExtra);
                 break;
-
             default:
                 break;
         }
@@ -92,11 +92,12 @@ public class PlayerManager : MonoBehaviour
 
     private void Respawn()
     {
-        GameManager.lives--;
+        health.ChangeHealth(-5f); // testing purposes. TODO: refactor properly
+        GameManager.playerHealth = health.GetCurrentHealth();
         OnDie?.Invoke();
-        if (GameManager.lives <= 0)
+        if (GameManager.playerHealth <= 0)
         {
-            // play death animation screen
+            // play death animation screen, disable movement
             Invoke(nameof(ReloadLevel), 2f);
         }
         else

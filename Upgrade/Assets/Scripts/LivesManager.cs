@@ -10,10 +10,10 @@ public class LivesManager : MonoBehaviour
     private void Start()
     {
         lifeSprite = Resources.Load("Life") as GameObject;
-        if (transform.childCount < GameManager.lives)
+        if (transform.childCount < GameManager.playerHealth)
         {
             children = transform.childCount;
-            for (int i = 0; i < GameManager.lives - children; i++)
+            for (int i = 0; i < GameManager.playerHealth - children; i++)
             {
                 Instantiate(lifeSprite, transform);
             }

@@ -11,15 +11,6 @@ public class Collectable : MonoBehaviour
         num++;
     }
 
-    private void OnDisable()
-    {
-        num--;
-        if (num == 0)
-        {
-            LevelManager.LoadNextLevel();
-        }
-    }
-
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -32,6 +23,12 @@ public class Collectable : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+        }
+
+        num--;
+        if (num == 0)
+        {
+            LevelManager.LoadNextLevel();
         }
 
         Destroy(gameObject, 2f);

@@ -45,9 +45,13 @@ public class Movement : MonoBehaviour
         GroundCheck();
         Jump();
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
-        animator.SetFloat("VerticalSpeed", verticalSpeed);
-        animator.SetBool("IsGrounded", isGrounded);
+        if (animator != null)
+        {
+            animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
+            animator.SetFloat("VerticalSpeed", verticalSpeed);
+            animator.SetBool("IsGrounded", isGrounded);
+        }
+        
 
         if (cooldown > 0) cooldown -= Time.deltaTime;
     }
