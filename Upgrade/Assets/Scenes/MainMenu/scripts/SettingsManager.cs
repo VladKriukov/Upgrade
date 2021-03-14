@@ -37,6 +37,7 @@ public class SettingsManager : MonoBehaviour
     public void onresolutionchange()
     {
         Screen.SetResolution(resolution[resolutiondropdown.value].width, resolution[resolutiondropdown.value].height, Screen.fullScreen);
+        gamesettings.resolutionindex = resolutiondropdown.value;
     }
 
     public void onmusicvolume()
@@ -59,6 +60,10 @@ public class SettingsManager : MonoBehaviour
 
     public void loadsettings()
     {
-
+        gamesettings = JsonUtility.FromJson<Gamesettings>(File.ReadAllText(Application.persistentDataPath + "/gamesettings.json"));
+        resolutiondropdown.value = gamesettings.resolutionindex;
+        musicvolumeslider.value = gamesettings.musicvolume;
+        fullscreentoggle.isOn = gamesettings.fullscreen;
+        resolutiondropdown.RefreshShownValue();
     }
 }
