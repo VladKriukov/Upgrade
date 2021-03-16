@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] GameObject MainCanvas;
+    [SerializeField] GameObject OptionsCanvas;
+
     public void Loadopeninglevel()
     {
         SceneManager.LoadScene(2);
@@ -10,12 +13,14 @@ public class MainMenu : MonoBehaviour
 
     public void LoadsettingsMenu()
     {
-        SceneManager.LoadScene(1);
+        MainCanvas.SetActive(false);
+        OptionsCanvas.SetActive(true);
     }
 
     public void loadmainmenu()
     {
-        SceneManager.LoadScene(0);
+        MainCanvas.SetActive(true);
+        OptionsCanvas.SetActive(false);
     }
 
     public void exitgame()
