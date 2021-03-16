@@ -3,7 +3,7 @@
 [RequireComponent(typeof(Health))]
 public class PlayerManager : MonoBehaviour
 {
-    [SerializeField] private float bouncerJumpExtra;
+    [SerializeField] private float jumpPadJumpMultiplier;
     private Collectable collectable;
     private Upgrade upgrade;
     private Vector2 respawnPoint;
@@ -58,8 +58,8 @@ public class PlayerManager : MonoBehaviour
             case "Respawn":
                 respawnPoint = transform.position;
                 break;
-            case "Bouncer":
-                GetComponent<Movement>().JumpUp(bouncerJumpExtra);
+            case "JumpPad":
+                GetComponent<Movement>().JumpUp(jumpPadJumpMultiplier);
                 break;
             default:
                 break;
