@@ -30,6 +30,7 @@ public class Movement : MonoBehaviour
     private float verticalSpeed;
     private bool isFacingRight = true;
     private bool isGrounded;
+    private bool canSprintInAir;
 
     private void Start()
     {
@@ -63,18 +64,19 @@ public class Movement : MonoBehaviour
 
     private void CheckInput()
     {
-        currentSpeed = leftShift ? runningSpeed : walkingSpeed;
+        //currentSpeed = leftShift ? runningSpeed : walkingSpeed;
         // the same as:
-        /*
-        if (leftShift)
+        
+        if (leftShift && !canSprintInAir && isGrounded)
         {
             currentSpeed = runningSpeed;
+            Debug.Log("Sprinting");
         }
         else
         {
             currentSpeed = walkingSpeed;
         }
-        */
+        
     }
 
     private void CheckDirection()
