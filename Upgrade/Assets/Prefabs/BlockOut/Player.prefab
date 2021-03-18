@@ -159,6 +159,7 @@ MonoBehaviour:
   jump: 0
   walkingSpeed: 3
   runningSpeed: 5
+  climbingSpeed: 3
   jumpStrength: 6
   fallStrength: 8
   smallJumpStrength: 7
