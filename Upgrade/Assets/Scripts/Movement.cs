@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private float walkingSpeed;
     [SerializeField] private float runningSpeed;
+    [SerializeField] private float climbingSpeed;
     [SerializeField] private float jumpStrength;
     [SerializeField] private float fallStrength = 8f;
     [SerializeField] private float smallJumpStrength = 7f;
@@ -31,6 +32,7 @@ public class Movement : MonoBehaviour
     private bool isFacingRight = true;
     private bool isGrounded;
     private bool canSprintInAir;
+    private bool isClimbing;
 
     private void Start()
     {
@@ -52,7 +54,6 @@ public class Movement : MonoBehaviour
             animator.SetFloat("VerticalSpeed", verticalSpeed);
             animator.SetBool("IsGrounded", isGrounded);
         }
-        
 
         if (cooldown > 0) cooldown -= Time.deltaTime;
     }
@@ -60,13 +61,14 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
+        if (isClimbing) rb.velocity = new Vector2(rb.velocity.x, vertical * climbingSpeed);
     }
 
     private void CheckInput()
     {
         //currentSpeed = leftShift ? runningSpeed : walkingSpeed;
         // the same as:
-        
+
         if (leftShift && !canSprintInAir && isGrounded)
         {
             currentSpeed = runningSpeed;
@@ -76,7 +78,6 @@ public class Movement : MonoBehaviour
         {
             currentSpeed = walkingSpeed;
         }
-        
     }
 
     private void CheckDirection()
@@ -101,17 +102,17 @@ public class Movement : MonoBehaviour
     private void Jump()
     {
         if (isGrounded && jump) JumpUp();
-        //if (!isClimbing)
-        //{
-        if (rb.velocity.y < 0)
+        if (!isClimbing)
         {
-            rb.velocity += new Vector2(0, -fallStrength * Time.deltaTime);
+            if (rb.velocity.y < 0)
+            {
+                rb.velocity += new Vector2(0, -fallStrength * Time.deltaTime);
+            }
+            else if (rb.velocity.y > 0 && !jump)
+            {
+                rb.velocity += new Vector2(0, -smallJumpStrength * Time.deltaTime);
+            }
         }
-        else if (rb.velocity.y > 0 && !jump)
-        {
-            rb.velocity += new Vector2(0, -smallJumpStrength * Time.deltaTime);
-        }
-        //}
     }
 
     private void GroundCheck()
@@ -125,6 +126,26 @@ public class Movement : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpStrength * additionalForce);
         //cooldown = jumpCooldown;
-        //StopClimbing();
+        StopClimbing();
+    }
+
+    void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladders") && vertical != 0)
+        {
+            isClimbing = true;
+            rb.gravityScale = 0;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladders")) StopClimbing();
+    }
+
+    void StopClimbing()
+    {
+        isClimbing = false;
+        rb.gravityScale = 1;
     }
 }

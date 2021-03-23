@@ -8,6 +8,7 @@ TagManager:
   - Music
   - Item Database
   - JumpPad
+  - Ladders
   layers:
   - Default
   - TransparentFX
