@@ -4,7 +4,7 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     public float startingHP = 100f;
-    float hp;
+    public float hp;
 
     public UnityEvent OnHealthChanged;
 
