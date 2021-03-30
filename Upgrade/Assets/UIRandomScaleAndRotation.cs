@@ -20,6 +20,13 @@ public class UIRandomScaleAndRotation : MonoBehaviour
         //-20, 20
     }
 
+    private void OnEnable()
+    {
+
+        StartCoroutine(ObjectRotate());
+        StartCoroutine(ObjectScale());
+
+    }
 
     void Update()
     {
