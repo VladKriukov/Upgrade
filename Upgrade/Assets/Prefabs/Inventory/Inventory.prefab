@@ -49,6 +49,6 @@ MonoBehaviour:
   inventory: []
   slots: []
   openTip: {fileID: 0}
-  canvas: {fileID: 0}
+  shopUI: {fileID: 0}
   paddingX: 20
   paddingY: 20

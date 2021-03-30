@@ -19,7 +19,7 @@ public class Inventory : MonoBehaviour
 
 
     [SerializeField] Text openTip;
-    [SerializeField] Canvas canvas;
+    [SerializeField] Canvas shopUI;
     [SerializeField] int paddingX;
     [SerializeField] int paddingY;
 
@@ -84,14 +84,14 @@ public class Inventory : MonoBehaviour
 
         if (showShop)
         {
-            canvas.gameObject.SetActive(true);
+            shopUI.gameObject.SetActive(true);
             openTip.text = "close shop ( e )";
             showinventory = true;
             Debug.Log("Rendering Shop");
         }
         else
         {
-            canvas.gameObject.SetActive(false);
+            shopUI.gameObject.SetActive(false);
             showinventory = false;
             showShop = false;
             Debug.Log("Hiding Shop");
