@@ -25,10 +25,12 @@ public class LevelManager : MonoBehaviour
         currentLevel = SceneManager.GetActiveScene().buildIndex;
         currentLevel++;
         SceneManager.LoadScene(currentLevel);
+        GameManager.inGame = true;
     }
 
     public static void ReloadLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameManager.inGame = true;
     }
 }

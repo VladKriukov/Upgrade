@@ -5,6 +5,7 @@ public class Puzzle2Behaviour : MonoBehaviour
 {
     [SerializeField] private Text text;
     [SerializeField] private Button button;
+    [SerializeField] private GameObject continueButton;
     [SerializeField] private Button submit;
     [SerializeField] private GameObject numberOne, numberTwo, numberThree, numberFour;
 
@@ -48,6 +49,7 @@ public class Puzzle2Behaviour : MonoBehaviour
                     {
                         Debug.Log("Fourth Number Matched");
                         text.text = "Opened Door";
+                        continueButton.gameObject.SetActive(true);
                     }
                 }
             }
