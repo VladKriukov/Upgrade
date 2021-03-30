@@ -6,18 +6,26 @@ public class PuzzleDoor : MonoBehaviour
     [SerializeField] GameObject instructionText;
     public UnityEvent onPuzzleComplete;
     bool awaitingInput;
+    bool alreadyOpened;
+    int ran;
+
+    private void Start()
+    {
+        int ran = Random.Range(0, transform.GetChild(1).childCount);
+    }
 
     private void Update()
     {
         if (awaitingInput == true)
         {
             if (Input.GetKeyDown(KeyCode.E))
-            {
-                transform.GetChild(1).GetChild(Random.Range(0, transform.GetChild(1).childCount)).gameObject.SetActive(true);
+            {                
+                transform.GetChild(1).GetChild(ran).gameObject.SetActive(true);
                 awaitingInput = false;
                 GameManager.inGame = false;
             }
         }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             ReturnControls();
