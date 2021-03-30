@@ -7,12 +7,14 @@ public class Puzzle3Behaviour : MonoBehaviour
 
     public GameObject text;
     public GameObject images;
+    public GameObject continueButton;
 
     private void Update()
     {
         if (matchesToWin == matches)
         {
             text.gameObject.SetActive(true);
+            continueButton.SetActive(true);
         }
     }
 

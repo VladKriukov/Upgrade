@@ -42,20 +42,27 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        // if in game
-        CheckInput();
-        CheckDirection();
-        GroundCheck();
-        Jump();
-
-        if (animator != null)
+        if (GameManager.inGame == true)
         {
-            animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
-            animator.SetFloat("VerticalSpeed", verticalSpeed);
-            animator.SetBool("IsGrounded", isGrounded);
-        }
+            GetComponent<Rigidbody2D>().simulated = true;
+            CheckInput();
+            CheckDirection();
+            GroundCheck();
+            Jump();
 
-        if (cooldown > 0) cooldown -= Time.deltaTime;
+            if (animator != null)
+            {
+                animator.SetFloat("Speed", Mathf.Abs(horizontalSpeed));
+                animator.SetFloat("VerticalSpeed", verticalSpeed);
+                animator.SetBool("IsGrounded", isGrounded);
+            }
+
+            if (cooldown > 0) cooldown -= Time.deltaTime;
+        }
+        else
+        {
+            GetComponent<Rigidbody2D>().simulated = false;
+        }
     }
 
     private void FixedUpdate()
@@ -67,7 +74,6 @@ public class Movement : MonoBehaviour
     private void CheckInput()
     {
         //currentSpeed = leftShift ? runningSpeed : walkingSpeed;
-        // the same as:
 
         if (leftShift && !canSprintInAir && isGrounded)
         {
