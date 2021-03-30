@@ -4,9 +4,9 @@ using UnityEngine.Events;
 public class PuzzleDoor : MonoBehaviour
 {
     [SerializeField] GameObject instructionText;
+    [SerializeField] GameObject mainUI;
     public UnityEvent onPuzzleComplete;
     bool awaitingInput;
-    bool alreadyOpened;
     int ran;
 
     private void Start()
@@ -23,6 +23,7 @@ public class PuzzleDoor : MonoBehaviour
                 transform.GetChild(1).GetChild(ran).gameObject.SetActive(true);
                 awaitingInput = false;
                 GameManager.inGame = false;
+                mainUI.SetActive(false);
             }
         }
 
@@ -63,5 +64,6 @@ public class PuzzleDoor : MonoBehaviour
         {
             item.gameObject.SetActive(false);
         }
+        mainUI.SetActive(true);
     }
 }

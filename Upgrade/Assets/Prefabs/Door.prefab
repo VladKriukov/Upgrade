@@ -4520,6 +4520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructionText: {fileID: 2793726435579772606}
+  mainUI: {fileID: 0}
   onPuzzleComplete:
     m_PersistentCalls:
       m_Calls:
