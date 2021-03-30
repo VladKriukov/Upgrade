@@ -4,6 +4,7 @@
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float jumpPadJumpMultiplier;
+    [SerializeField] int forceAmount;
     private Collectable collectable;
     private Upgrade upgrade;
     private Vector2 respawnPoint;
@@ -53,7 +54,8 @@ public class PlayerManager : MonoBehaviour
         switch (collision.tag)
         {
             case "Danger":
-                Respawn();
+                TakeDamage(5);
+                TakeForce();
                 break;
             case "Respawn":
                 respawnPoint = transform.position;
@@ -90,9 +92,20 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    private void Respawn()
+    private void TakeDamage (float damage)
     {
-        health.ChangeHealth(-5f); // testing purposes. TODO: refactor properly
+        health.ChangeHealth(-damage);
+        
+
+    }
+
+    private void TakeForce()
+    {
+        gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * forceAmount);
+    }
+
+    private void Respawn(float damage)
+    {
         GameManager.playerHealth = health.GetCurrentHealth();
         OnDie?.Invoke();
         if (GameManager.playerHealth <= 0)
