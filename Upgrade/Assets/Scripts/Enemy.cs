@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    float health = 20f;
-    float damage = 10f;
+    [SerializeField] float health = 20f;
+    [SerializeField] float damage = 10f;
     Damagemanager DM;
     // Start is called before the first frame update
     void Start()
@@ -18,13 +18,17 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-      if (collision.tag=="Player")
+      if (collision.gameObject.tag=="Player")
         {
-            DM.playerdamage(damage);
+            collision.gameObject.GetComponent<Health>().ChangeHealth(-damage);
+            //DM.playerdamage(damage);
+            Debug.Log("Damage Player");
         }
     }
+
     public void enemyhealth(float damage)
     {
         health = health - damage;

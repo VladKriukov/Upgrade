@@ -24,6 +24,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        QualitySettings.vSyncCount = 1; // enable vsync
         respawnPoint = transform.position;
         health = GetComponent<Health>();
     }
