@@ -38,13 +38,14 @@ public class Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         if (!animator && GetComponent<Animator>() != null) animator = GetComponent<Animator>();
+        GameManager.inGame = true;
     }
 
     private void Update()
     {
         if (GameManager.inGame == true)
         {
-            GetComponent<Rigidbody2D>().simulated = true;
+            rb.simulated = true;
             CheckInput();
             CheckDirection();
             GroundCheck();
@@ -61,7 +62,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            GetComponent<Rigidbody2D>().simulated = false;
+            rb.simulated = false;
         }
     }
 
