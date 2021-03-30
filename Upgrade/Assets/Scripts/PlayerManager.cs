@@ -25,6 +25,7 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         QualitySettings.vSyncCount = 1; // enable vsync
+        Inventory.showShop = false; // hide shop
         respawnPoint = transform.position;
         health = GetComponent<Health>();
     }

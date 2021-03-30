@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     public List<Item> slots = new List<Item>();
     private ItemDatabase database;
     private bool showinventory=true;
-    private bool showShop = true;
+    public static bool showShop = false;
     private bool showtooltip;
     private string tooltip;
     private bool draggingitem;
@@ -41,7 +41,7 @@ public class Inventory : MonoBehaviour
             showinventory = !showinventory;
         }
 
-        if (Input.GetButtonDown("Shop"))
+        if (Input.GetButtonDown("Shop")&&showShop)
         {
             showShop = !showShop;
         }
