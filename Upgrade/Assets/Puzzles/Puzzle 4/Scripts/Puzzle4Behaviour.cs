@@ -6,6 +6,7 @@ public class Puzzle4Behaviour : MonoBehaviour
     public static bool lockPuzzle = false;
     [SerializeField] private GameObject[] Number;
     [SerializeField] private Text text;
+    [SerializeField] private GameObject continueButton;
     public static int currentButton = 1;
     public static bool resetColours;
 
@@ -31,6 +32,7 @@ public class Puzzle4Behaviour : MonoBehaviour
             Number[i].gameObject.GetComponent<Image>().color = Color.grey;
             resetColours = false;
         }
+        continueButton.SetActive(true);
     }
 
     private void ResetColours()

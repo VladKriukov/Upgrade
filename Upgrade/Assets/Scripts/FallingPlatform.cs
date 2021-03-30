@@ -34,7 +34,8 @@ public class FallingPlatform : MonoBehaviour
         yield return new WaitForSeconds(2f);
         rb.bodyType = RigidbodyType2D.Static;
         boxCollider.enabled = true;
-        transform.position = startingPos;
+        Destroy(gameObject);
+        //transform.position = startingPos;
         yield return null;
     }
 }

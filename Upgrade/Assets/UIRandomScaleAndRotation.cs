@@ -5,6 +5,8 @@ using UnityEngine;
 public class UIRandomScaleAndRotation : MonoBehaviour
 {
     float scale;
+    [SerializeField] bool Rotate;
+    [SerializeField] bool Scale;
 
     void Start()
     {
@@ -18,6 +20,13 @@ public class UIRandomScaleAndRotation : MonoBehaviour
         //-20, 20
     }
 
+    private void OnEnable()
+    {
+
+        StartCoroutine(ObjectRotate());
+        StartCoroutine(ObjectScale());
+
+    }
 
     void Update()
     {
@@ -26,49 +35,53 @@ public class UIRandomScaleAndRotation : MonoBehaviour
     }
     IEnumerator ObjectRotate()
     {
-        float timer = 0;
-        while (true)
+        if (Rotate)
         {
-            float angle = Mathf.Sin(timer) * 20;
-            gameObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            float timer = 0;
+            while (true)
+            {
+                float angle = Mathf.Sin(timer) * 20;
+                gameObject.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            timer += Time.deltaTime;
-            yield return null;
+                timer += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 
     public float maxSize = 2f;
-    public float growFactor=1f;
+    public float growFactor = 1f;
     public float waitTime = 5f;
 
     IEnumerator ObjectScale()
     {
         float timer = 0;
-
-        while (true) // this could also be a condition indicating "alive or dead"
+        if (Scale)
         {
-            // we scale all axis, so they will have the same value, 
-            // so we can work with a float instead of comparing vectors
-            while (maxSize > transform.localScale.x)
+            while (true)
             {
-                timer += Time.deltaTime;
-                transform.localScale += new Vector3(1, 1, 1) * Time.deltaTime * growFactor;
-                yield return null;
+
+                while (maxSize > transform.localScale.x)
+                {
+                    timer += Time.deltaTime;
+                    transform.localScale += new Vector3(1, 1, 1) * Time.deltaTime * growFactor;
+                    yield return null;
+                }
+                // reset the timer
+
+                yield return new WaitForSeconds(waitTime);
+
+                timer = 0;
+                while (1 < transform.localScale.x)
+                {
+                    timer += Time.deltaTime;
+                    transform.localScale -= new Vector3(1, 1, 1) * Time.deltaTime * growFactor;
+                    yield return null;
+                }
+
+                timer = 0;
+                yield return new WaitForSeconds(waitTime);
             }
-            // reset the timer
-
-            yield return new WaitForSeconds(waitTime);
-
-            timer = 0;
-            while (1 < transform.localScale.x)
-            {
-                timer += Time.deltaTime;
-                transform.localScale -= new Vector3(1, 1, 1) * Time.deltaTime * growFactor;
-                yield return null;
-            }
-
-            timer = 0;
-            yield return new WaitForSeconds(waitTime);
         }
     }
 }

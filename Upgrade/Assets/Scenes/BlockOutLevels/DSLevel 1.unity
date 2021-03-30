@@ -5360,6 +5360,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1538017271 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3502718065281504907, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
+  m_PrefabInstance: {fileID: 1013209042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaddf44dea2f54449a07f6e7bd47b9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1573728851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5558,6 +5569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1265118573051551390, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1538017271}
     - target: {fileID: 1265118573543180019, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
       propertyPath: m_Name
       value: Canvas (1)

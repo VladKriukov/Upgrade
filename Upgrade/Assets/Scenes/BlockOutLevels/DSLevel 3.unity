@@ -623,6 +623,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7a9e20800c688e4b8c01c6ecf2795c2, type: 3}
+--- !u!114 &665119082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3502718065281504907, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
+  m_PrefabInstance: {fileID: 1013209042}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaddf44dea2f54449a07f6e7bd47b9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &758006949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -810,6 +821,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1265118573051551390, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 665119082}
     - target: {fileID: 1265118573543180019, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -961,6 +976,10 @@ PrefabInstance:
     - target: {fileID: 8431832989686405986, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
       propertyPath: bouncerJumpExtra
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431832989686405986, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
+      propertyPath: forceAmount
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8431832989686405988, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
       propertyPath: m_LocalPosition.x
