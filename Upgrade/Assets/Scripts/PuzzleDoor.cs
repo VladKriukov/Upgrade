@@ -11,7 +11,7 @@ public class PuzzleDoor : MonoBehaviour
 
     private void Start()
     {
-        int ran = Random.Range(0, transform.GetChild(1).childCount);
+        ran = Random.Range(0, transform.GetChild(1).childCount);
     }
 
     private void Update()
