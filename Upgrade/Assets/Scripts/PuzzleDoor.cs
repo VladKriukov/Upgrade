@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class PuzzleDoor : MonoBehaviour
 {
     [SerializeField] GameObject instructionText;
     [SerializeField] GameObject mainUI;
+    [SerializeField] bool isReturnDoor;
     public UnityEvent onPuzzleComplete;
     bool awaitingInput;
     int ran;
@@ -18,13 +20,21 @@ public class PuzzleDoor : MonoBehaviour
     {
         if (awaitingInput == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {                
+            if (isReturnDoor)
+            {
+                if (Input.GetKeyDown(KeyCode.W))
+                {
+                    LevelManager.LoadPreviousLevel();
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.E))
+            {
                 transform.GetChild(1).GetChild(ran).gameObject.SetActive(true);
                 awaitingInput = false;
                 GameManager.inGame = false;
                 mainUI.SetActive(false);
             }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -37,8 +47,7 @@ public class PuzzleDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            instructionText.SetActive(true);
-            awaitingInput = true;
+            Door(true);
         }
     }
 
@@ -46,8 +55,21 @@ public class PuzzleDoor : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            instructionText.SetActive(false);
-            awaitingInput = false;
+            Door(false);
+        }
+    }
+
+    private void Door(bool b)
+    {
+        instructionText.SetActive(b);
+        awaitingInput = b;
+        if (isReturnDoor)
+        {
+            instructionText.GetComponent<TMP_Text>().text = "Press 'W' to go back";
+        }
+        else
+        {
+            instructionText.GetComponent<TMP_Text>().text = "Press 'E' to start puzzle";
         }
     }
 

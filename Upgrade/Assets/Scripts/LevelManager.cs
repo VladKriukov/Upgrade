@@ -24,13 +24,25 @@ public class LevelManager : MonoBehaviour
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
         currentLevel++;
-        SceneManager.LoadScene(currentLevel);
-        GameManager.inGame = true;
+        SetupLevel();
     }
 
     public static void ReloadLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
+        SetupLevel();
+    }
+
+    public static void LoadPreviousLevel()
+    {
+        currentLevel = SceneManager.GetActiveScene().buildIndex;
+        currentLevel--;
+        SetupLevel();
+    }
+
+    private static void SetupLevel()
+    {
+        SceneManager.LoadScene(currentLevel);
         GameManager.inGame = true;
     }
 }
