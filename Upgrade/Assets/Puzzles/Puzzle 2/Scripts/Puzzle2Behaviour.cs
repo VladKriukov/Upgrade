@@ -20,7 +20,7 @@ public class Puzzle2Behaviour : MonoBehaviour
         buttonComponent.onClick.AddListener(DebugButtonClick);
         submitComponent.onClick.AddListener(compareValues);
 
-        doorNumber = Random.Range(0, 9999);
+        doorNumber = Random.Range(1000, 9999);
         firstNumber = (int)char.GetNumericValue(doorNumber.ToString()[0]);
         secondNumber = (int)char.GetNumericValue(doorNumber.ToString()[1]);
         thirdNumber = (int)char.GetNumericValue(doorNumber.ToString()[2]);
