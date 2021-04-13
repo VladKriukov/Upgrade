@@ -5,21 +5,6 @@ public class LevelManager : MonoBehaviour
 {
     private static int currentLevel = 1;
 
-    private void OnDisable()
-    {
-        PlayerManager.OnUpgrade -= PlayerManager_OnUpgrade;
-    }
-
-    private void OnEnable()
-    {
-        PlayerManager.OnUpgrade += PlayerManager_OnUpgrade;
-    }
-
-    private void PlayerManager_OnUpgrade()
-    {
-        LoadNextLevel();
-    }
-
     public static void LoadNextLevel()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;

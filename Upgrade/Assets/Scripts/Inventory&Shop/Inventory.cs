@@ -94,7 +94,7 @@ public class Inventory : MonoBehaviour
             shopUI.gameObject.SetActive(false);
             showinventory = false;
             showShop = false;
-            Debug.Log("Hiding Shop");
+            //Debug.Log("Hiding Shop");
 
         }
     }

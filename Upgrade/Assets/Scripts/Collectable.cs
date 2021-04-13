@@ -30,7 +30,5 @@ public class Collectable : MonoBehaviour
         {
             LevelManager.LoadNextLevel();
         }
-
-        Destroy(gameObject, 2f);
     }
 }

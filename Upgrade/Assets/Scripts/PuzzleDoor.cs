@@ -7,13 +7,21 @@ public class PuzzleDoor : MonoBehaviour
     [SerializeField] GameObject instructionText;
     [SerializeField] GameObject mainUI;
     [SerializeField] bool isReturnDoor;
+    [SerializeField] SaveSystem save;
+    [HideInInspector] public bool isUnlocked;
     public UnityEvent onPuzzleComplete;
+    public UnityEvent onDoorUnlocked;
     bool awaitingInput;
     int ran;
 
     private void Start()
     {
         ran = Random.Range(0, transform.GetChild(1).childCount);
+        if (save == null) Debug.LogWarning("There is no save system assigned to door!");
+        if (isUnlocked)
+        {
+            onDoorUnlocked.Invoke();
+        }
     }
 
     private void Update()
@@ -24,15 +32,24 @@ public class PuzzleDoor : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.W))
                 {
-                    LevelManager.LoadPreviousLevel();
+                    if (save != null) save.Save();
+                    Invoke(nameof(PreviousLevel), 0.1f);
                 }
             }
             else if (Input.GetKeyDown(KeyCode.E))
             {
-                transform.GetChild(1).GetChild(ran).gameObject.SetActive(true);
-                awaitingInput = false;
-                GameManager.inGame = false;
-                mainUI.SetActive(false);
+                if (isUnlocked)
+                {
+                    if (save != null) save.Save();
+                    Invoke(nameof(NextLevel), 0.1f);
+                }
+                else
+                {
+                    transform.GetChild(1).GetChild(ran).gameObject.SetActive(true);
+                    awaitingInput = false;
+                    GameManager.inGame = false;
+                    mainUI.SetActive(false);
+                }
             }
 
         }
@@ -41,6 +58,16 @@ public class PuzzleDoor : MonoBehaviour
         {
             ReturnControls();
         }
+    }
+
+    void NextLevel()
+    {
+        LevelManager.LoadNextLevel();
+    }
+
+    void PreviousLevel()
+    {
+        LevelManager.LoadPreviousLevel();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -71,10 +98,16 @@ public class PuzzleDoor : MonoBehaviour
         {
             instructionText.GetComponent<TMP_Text>().text = "Press 'E' to start puzzle";
         }
+        if (isUnlocked)
+        {
+            instructionText.GetComponent<TMP_Text>().text = "Press 'E' to go to next level";
+        }
     }
 
     public void PuzzleComplete()
     {
+        isUnlocked = true;
+        if (save != null) save.Save();
         onPuzzleComplete.Invoke();
         ReturnControls();
     }
