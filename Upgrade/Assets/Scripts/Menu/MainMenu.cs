@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject MainCanvas;
     [SerializeField] GameObject OptionsCanvas;
+    [SerializeField] AudioMixer masterMixer;
 
     public void Loadopeninglevel()
     {
@@ -28,8 +30,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void ChangeVolume(float volume)
+    public void ChangeMusicVolume(float volume)
     {
-        AudioListener.volume=volume;
+        masterMixer.SetFloat("MusicVolume", volume);
+    }
+
+    public void ChangeSFXVolume(float volume)
+    {
+        masterMixer.SetFloat("SFXVolume", volume);
     }
 }
