@@ -17,12 +17,18 @@ public class PlayerManager : MonoBehaviour
 
     public static event Die OnDie;
 
+
+    Vector2 direction;
+    Rigidbody2D rb;
+
     private void Start()
     {
         QualitySettings.vSyncCount = 1; // enable vsync
         Inventory.showShop = false; // hide shop
         respawnPoint = transform.position;
         health = GetComponent<Health>();
+
+        rb = gameObject.GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,7 +45,10 @@ public class PlayerManager : MonoBehaviour
         {
             case "Danger":
                 TakeDamage(5);
-                TakeForce();
+
+                direction = rb.transform.position - collision.transform.position;
+                rb.AddForce(direction.normalized * forceAmount);
+
                 break;
             case "Respawn":
                 respawnPoint = transform.position;
@@ -55,11 +64,6 @@ public class PlayerManager : MonoBehaviour
     private void TakeDamage (float damage)
     {
         health.ChangeHealth(-damage);
-    }
-
-    private void TakeForce()
-    {
-        gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * forceAmount);
     }
 
     private void Respawn(float damage)
