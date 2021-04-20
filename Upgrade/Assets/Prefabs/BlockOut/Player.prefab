@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpPadJumpMultiplier: 1.5
+  forceAmount: 100
 --- !u!212 &8431832989686405987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -284,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHP: 100
+  hp: 0
   OnHealthChanged:
     m_PersistentCalls:
       m_Calls:
