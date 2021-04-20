@@ -32,11 +32,13 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeMusicVolume(float volume)
     {
-        masterMixer.SetFloat("MusicVolume", volume);
+        var result = 20 * Mathf.Log10(volume);
+        masterMixer.SetFloat("MusicVolume", result);
     }
 
     public void ChangeSFXVolume(float volume)
     {
-        masterMixer.SetFloat("SFXVolume", volume);
+        var result = 20 * Mathf.Log10(volume);
+        masterMixer.SetFloat("SFXVolume", result);
     }
 }
