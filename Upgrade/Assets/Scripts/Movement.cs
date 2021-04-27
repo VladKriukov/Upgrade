@@ -46,10 +46,13 @@ public class Movement : MonoBehaviour
         if (GameManager.inGame == true)
         {
             rb.simulated = true;
-            CheckInput();
-            CheckDirection();
-            GroundCheck();
-            Jump();
+            if (!GameManager.lockMovements)
+            {
+                CheckInput();
+                CheckDirection();
+                GroundCheck();
+                Jump();
+            }
 
             if (animator != null)
             {
@@ -62,14 +65,17 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            rb.simulated = false;
+            
         }
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
-        if (isClimbing) rb.velocity = new Vector2(rb.velocity.x, vertical * climbingSpeed);
+        if (!GameManager.lockMovements)
+        {
+            rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
+            if (isClimbing) rb.velocity = new Vector2(rb.velocity.x, vertical * climbingSpeed);
+        }
     }
 
     private void CheckInput()
