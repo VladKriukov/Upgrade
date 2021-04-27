@@ -28,7 +28,7 @@ public class Collectable : MonoBehaviour
         num--;
         if (num == 0)
         {
-            LevelManager.LoadNextLevel();
+            Debug.Log("Collected all coins");
         }
     }
 }

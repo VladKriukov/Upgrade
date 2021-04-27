@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Health))]
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float jumpPadJumpMultiplier;
@@ -26,7 +25,7 @@ public class PlayerManager : MonoBehaviour
         QualitySettings.vSyncCount = 1; // enable vsync
         Inventory.showShop = false; // hide shop
         respawnPoint = transform.position;
-        health = GetComponent<Health>();
+        health = FindObjectOfType<Health>();
 
         rb = gameObject.GetComponent<Rigidbody2D>();
     }

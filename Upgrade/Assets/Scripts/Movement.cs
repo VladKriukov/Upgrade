@@ -65,7 +65,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            
+            rb.simulated = false;
         }
     }
 
