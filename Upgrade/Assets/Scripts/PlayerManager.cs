@@ -44,11 +44,9 @@ public class PlayerManager : MonoBehaviour
         switch (collision.tag)
         {
             case "Danger":
-                TakeDamage(5);
-
+                TakeDamage(25);
                 direction = rb.transform.position - collision.transform.position;
                 rb.AddForce(direction.normalized * forceAmount);
-
                 break;
             case "Respawn":
                 respawnPoint = transform.position;
@@ -64,15 +62,16 @@ public class PlayerManager : MonoBehaviour
     private void TakeDamage (float damage)
     {
         health.ChangeHealth(-damage);
+        Respawn();
     }
 
-    private void Respawn(float damage)
+    private void Respawn()
     {
-        GameManager.playerHealth = health.GetCurrentHealth();
         OnDie?.Invoke();
         if (GameManager.playerHealth <= 0)
         {
             // play death animation screen, disable movement
+            GameManager.inGame = false;
             Invoke(nameof(ReloadLevel), 2f);
         }
         else
@@ -84,5 +83,7 @@ public class PlayerManager : MonoBehaviour
     private void ReloadLevel()
     {
         LevelManager.ReloadLevel();
+        GameManager.inGame = true;
+        health.ResetHealth();
     }
 }

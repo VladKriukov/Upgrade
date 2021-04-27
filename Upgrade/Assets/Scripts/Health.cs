@@ -10,18 +10,23 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
-        hp = startingHP;
+        ResetHealth();
     }
 
     public void ChangeHealth(float amount)
     {
         Debug.Log("Current health (" + hp + ") adds " + amount + " to hp");
-        hp += amount;
+        GameManager.playerHealth += amount;
         OnHealthChanged.Invoke();
     }
 
     public float GetCurrentHealth()
     {
-        return hp;
+        return GameManager.playerHealth;
+    }
+
+    public void ResetHealth()
+    {
+        GameManager.playerHealth = startingHP;
     }
 }
