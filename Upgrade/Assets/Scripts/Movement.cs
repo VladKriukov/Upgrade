@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Movement : MonoBehaviour
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     private bool canSprintInAir;
     private bool isClimbing;
+    private int jumpCount;
 
     private void Start()
     {
@@ -114,7 +116,16 @@ public class Movement : MonoBehaviour
 
     private void Jump()
     {
-        if (isGrounded && jump) JumpUp();
+        if (!isGrounded && jumpCount > 0 && Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Dash();
+        }
+        else if (isGrounded && jump)
+        {
+            JumpUp();
+        }
+
+
         if (!isClimbing)
         {
             if (rb.velocity.y < 0)
@@ -133,13 +144,25 @@ public class Movement : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position - checkStartPos, -Vector2.up, checkDistance, lLayerMask);
         Debug.DrawLine(transform.position - checkStartPos, new Vector3(transform.position.x, transform.position.y - checkStartPos.y - checkDistance, transform.position.z), Color.red);
         isGrounded = hit.collider;
+
+        if (isGrounded)
+        {
+            jumpCount = 0;
+        }
     }
 
     public void JumpUp(float additionalForce = 1)
     {
+        jumpCount = jumpCount + 1;
         rb.velocity = new Vector2(rb.velocity.x, jumpStrength * additionalForce);
         //cooldown = jumpCooldown;
         StopClimbing();
+    }
+
+
+    public void Dash()
+    {
+
     }
 
     void OnTriggerStay2D(Collider2D collision)
