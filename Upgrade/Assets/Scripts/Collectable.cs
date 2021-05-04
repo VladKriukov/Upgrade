@@ -1,10 +1,33 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Collectable : MonoBehaviour
 {
     public int value;
     public static int num;
     private Animator animator;
+
+    [SerializeField] float speed = 2f;
+    [SerializeField] float height = 0.003f;
+
+    void Start()
+    { 
+        StartCoroutine(MoveUpAndDown());
+    }
+
+   public IEnumerator MoveUpAndDown()
+    {
+
+        Vector2 pos = transform.position;
+
+        float newY = Mathf.Sin(Time.time * speed) * height + pos.y;
+
+        transform.position = new Vector2(transform.position.x, newY);
+
+        yield return null;
+
+        StartCoroutine(MoveUpAndDown());
+    }
 
     private void OnEnable()
     {

@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
+  speed: 2
+  height: 0.003
 --- !u!61 &8627698746160443338
 BoxCollider2D:
   m_ObjectHideFlags: 0
