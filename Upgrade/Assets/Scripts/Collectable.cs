@@ -20,7 +20,7 @@ public class Collectable : MonoBehaviour
 
         Vector2 pos = transform.position;
 
-        float newY = Mathf.Sin(Time.time * speed) * height + pos.y;
+        float newY = Mathf.Sin(Time.unscaledTime * speed) * height + pos.y;
 
         transform.position = new Vector2(transform.position.x, newY);
 
