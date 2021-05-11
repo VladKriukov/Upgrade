@@ -34,6 +34,7 @@ public class Movement : MonoBehaviour
     private bool isGrounded;
     private bool canSprintInAir;
     private bool isClimbing;
+    private bool isDashing;
     private int jumpCount;
 
     private void Start()
@@ -160,9 +161,14 @@ public class Movement : MonoBehaviour
     }
 
 
-    public void Dash()
+    void Dash()
     {
-
+        jumpCount = 0;
+        float dash = 2000f;
+        float direction = horizontal;
+        rb.gravityScale = 0;
+        rb.AddForce(new Vector2(direction * dash, 0), ForceMode2D.Force);
+        rb.gravityScale = 1;
     }
 
     void OnTriggerStay2D(Collider2D collision)
