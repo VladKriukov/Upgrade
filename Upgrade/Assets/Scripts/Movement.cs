@@ -25,6 +25,10 @@ public class Movement : MonoBehaviour
     private float currentSpeed;
     private float cooldown;
 
+    Vector2 dashDir;
+    [SerializeField] float dashStrength = 15f;
+    [SerializeField] float dashDrag = 7f;
+
     private Rigidbody2D rb;
     [SerializeField] private Animator animator;
 
@@ -76,7 +80,7 @@ public class Movement : MonoBehaviour
     {
         if (!GameManager.lockMovements)
         {
-            rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
+            if (!isDashing) rb.velocity = new Vector2(horizontal * currentSpeed, rb.velocity.y);
             if (isClimbing) rb.velocity = new Vector2(rb.velocity.x, vertical * climbingSpeed);
         }
     }
@@ -119,7 +123,9 @@ public class Movement : MonoBehaviour
     {
         if (!isGrounded && jumpCount > 0 && Input.GetKeyDown(KeyCode.LeftShift))
         {
-            Dash();
+            //Dash();
+            //Debug.Log("Dashing");
+            StartCoroutine(DoDash());
         }
         else if (isGrounded && jump)
         {
@@ -163,12 +169,36 @@ public class Movement : MonoBehaviour
 
     void Dash()
     {
+        Debug.Log("Dashing");
         jumpCount = 0;
         float dash = 2000f;
         float direction = horizontal;
         rb.gravityScale = 0;
-        rb.AddForce(new Vector2(direction * dash, 0), ForceMode2D.Force);
+        Vector2 dir = new Vector2(direction, 0);
+        dir.Normalize();
+        rb.AddForce(dir * dash, ForceMode2D.Force);
         rb.gravityScale = 1;
+    }
+
+    IEnumerator DoDash()
+    {
+        isDashing = true;
+        //canDash = false;
+        rb.gravityScale = 0;
+        dashDir.x = horizontal;
+        dashDir.y = vertical;
+        dashDir.Normalize();
+        rb.AddForce(dashDir * dashStrength, ForceMode2D.Impulse);
+        rb.drag = dashDrag;
+        //OnDash?.Invoke();
+        //dash animation
+        yield return new WaitForSeconds(0.2f);
+        rb.gravityScale = 1;
+        rb.drag = 0f;
+        isDashing = false;
+        Debug.Log("Stop Dashing");
+        //yield return new WaitForSeconds(dashCooldown);
+        yield return null;
     }
 
     void OnTriggerStay2D(Collider2D collision)
