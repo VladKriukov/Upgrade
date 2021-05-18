@@ -167,7 +167,17 @@ MonoBehaviour:
   lLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  dashStrength: 15
+  dashDrag: 7
   animator: {fileID: 0}
+  DashSFX:
+  - {fileID: 8300000, guid: a58a926ce006c9c4da05bf1c812c01d9, type: 3}
+  - {fileID: 8300000, guid: f4132510238c68f4c907d1c7355ebf1b, type: 3}
+  - {fileID: 8300000, guid: a40b9a53a64e5a94db83ec39c90c1ccb, type: 3}
+  - {fileID: 8300000, guid: 5446800bdc8e56c4fafc5b8f58a61c2d, type: 3}
+  - {fileID: 8300000, guid: 3df0c8d45d556eb48b2b9dea37747eed, type: 3}
+  - {fileID: 8300000, guid: c6f1b3a30904fef40a5459020bc44d3f, type: 3}
+  - {fileID: 8300000, guid: e0ce2066ebea7a04ba2898e7604cb225, type: 3}
 --- !u!114 &8431832989686405991
 MonoBehaviour:
   m_ObjectHideFlags: 0
