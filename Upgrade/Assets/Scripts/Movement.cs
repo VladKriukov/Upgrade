@@ -37,6 +37,8 @@ public class Movement : MonoBehaviour
     private bool isDashing;
     private int jumpCount;
 
+    [SerializeField] AudioClip[] DashSFX;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -163,6 +165,7 @@ public class Movement : MonoBehaviour
 
     void Dash()
     {
+        AudioSource.PlayClipAtPoint(DashSFX[Random.Range(0, DashSFX.Length)], transform.position);
         jumpCount = 0;
         float dash = 2000f;
         float direction = horizontal;
