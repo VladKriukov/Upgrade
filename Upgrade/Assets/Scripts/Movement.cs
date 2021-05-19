@@ -185,7 +185,7 @@ public class Movement : MonoBehaviour
     IEnumerator DoDash()
     {
         AudioSource.PlayClipAtPoint(DashSFX[Random.Range(0, DashSFX.Length)], transform.position);
-
+        jumpCount = 0;
         isDashing = true;
         //canDash = false;
         rb.gravityScale = 0;
@@ -200,7 +200,6 @@ public class Movement : MonoBehaviour
         rb.gravityScale = 1;
         rb.drag = 0f;
         isDashing = false;
-        Debug.Log("Stop Dashing");
         //yield return new WaitForSeconds(dashCooldown);
         yield return null;
     }
