@@ -1181,27 +1181,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FullTilemap_40
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2cd28983ef25e7f70800000000000000
-      internalID: 9186871541707058626
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: FullTilemap_48
       rect:
         serializedVersion: 2
@@ -1344,48 +1323,6 @@ TextureImporter:
       bones: []
       spriteID: 4b42b86d55b00a450800000000000000
       internalID: 6097886358759220404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FullTilemap_55
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d56c0f70a02492800800000000000000
-      internalID: 588073837198886493
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FullTilemap_56
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b61d142747da1c7a0800000000000000
-      internalID: -6358610483225702037
       vertices: []
       indices: 
       edges: []
