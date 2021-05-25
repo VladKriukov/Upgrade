@@ -99,6 +99,7 @@ MonoBehaviour:
   value: 1
   speed: 2
   height: 0.001
+  sfx: {fileID: 8300000, guid: 8e6ad9104ebd56149a9566335533f99a, type: 3}
 --- !u!61 &8627698746160443338
 BoxCollider2D:
   m_ObjectHideFlags: 0

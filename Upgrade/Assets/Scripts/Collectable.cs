@@ -9,6 +9,7 @@ public class Collectable : MonoBehaviour
 
     [SerializeField] float speed = 2f;
     [SerializeField] float height = 0.003f;
+    [SerializeField] AudioClip sfx;
 
     void Start()
     { 
@@ -42,7 +43,11 @@ public class Collectable : MonoBehaviour
     public void Collect()
     {
         if (animator != null)
+        {
+
             animator.Play("Collected");
+        }
+
         else
         {
             gameObject.SetActive(false);
@@ -53,5 +58,7 @@ public class Collectable : MonoBehaviour
         {
             Debug.Log("Collected all coins");
         }
+
+        AudioSource.PlayClipAtPoint(sfx, transform.position);
     }
 }
