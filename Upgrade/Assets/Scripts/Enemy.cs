@@ -16,12 +16,12 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-      if (collision.gameObject.tag=="Player")
+        if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Health>().ChangeHealth(-damage);
             //DM.playerdamage(damage);
@@ -32,9 +32,10 @@ public class Enemy : MonoBehaviour
     public void enemyhealth(float damage)
     {
         health = health - damage;
-        if(health<=0)
+        if (health <= 0)
         {
             Destroy(gameObject);
         }
     }
 }
+

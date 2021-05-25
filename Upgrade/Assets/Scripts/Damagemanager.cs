@@ -22,16 +22,11 @@ public class Damagemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void playerdamage(float damage)
-    {
-        reducedhealth = health.hp - damage;
-        health.ChangeHealth(reducedhealth);
+
     }
     public void enemydamage(float damage)
     {
-
+        enemy.enemyhealth(damage);
     }
 
 }

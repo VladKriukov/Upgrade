@@ -15,7 +15,8 @@ public class PlayerManager : MonoBehaviour
     public delegate void Die();
 
     public static event Die OnDie;
-
+    Damagemanager dm;
+    public float damage;
 
     Vector2 direction;
     Rigidbody2D rb;
@@ -62,6 +63,10 @@ public class PlayerManager : MonoBehaviour
     {
         health.ChangeHealth(-damage);
         Respawn();
+    }
+    public void dealdamage()
+    {
+        dm.enemydamage(damage);
     }
 
     private void Respawn()
