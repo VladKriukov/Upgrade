@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BlockOutLevels/DSLevel 2.unity
     guid: ab76f4947372de344a25cc038a62358d
   - enabled: 1
+    path: Assets/Scenes/BlockOutLevels/DSLevel 4.unity
+    guid: d23f6a25f65fbee4ca8e5023b22f64ca
+  - enabled: 1
+    path: Assets/Scenes/BlockOutLevels/DSLevel 5.unity
+    guid: e3734278998db124687015abc5312601
+  - enabled: 1
     path: Assets/Scenes/Inventory/InventoryExampleScene.unity
     guid: 83b4473cb1678f6439b22f9d8f6f3b41
   m_configObjects: {}
