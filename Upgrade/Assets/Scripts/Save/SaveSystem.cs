@@ -106,7 +106,10 @@ public class SaveSystem : MonoBehaviour
 
         if (player != null)
         {
-            player.transform.position = new Vector3(PlayerPrefs.GetFloat("PlayerX_" + SceneManager.GetActiveScene().name), PlayerPrefs.GetFloat("PlayerY_" + SceneManager.GetActiveScene().name), PlayerPrefs.GetFloat("PlayerZ_" + SceneManager.GetActiveScene().name));
+            player.transform.position = new Vector3(
+                PlayerPrefs.GetFloat("PlayerX_" + SceneManager.GetActiveScene().name), 
+                PlayerPrefs.GetFloat("PlayerY_" + SceneManager.GetActiveScene().name), 
+                PlayerPrefs.GetFloat("PlayerZ_" + SceneManager.GetActiveScene().name));
         }
 
         if (enemies != null)
