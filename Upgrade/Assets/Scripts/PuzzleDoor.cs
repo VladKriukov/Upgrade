@@ -5,12 +5,12 @@ using TMPro;
 public class PuzzleDoor : MonoBehaviour
 {
     [SerializeField] GameObject instructionText;
-    [SerializeField] GameObject mainUI;
     [SerializeField] bool isReturnDoor;
     [SerializeField] SaveSystem save;
     [HideInInspector] public bool isUnlocked;
     public UnityEvent onPuzzleComplete;
     public UnityEvent onDoorUnlocked;
+    GameObject mainUI;
     bool awaitingInput;
     int ran;
 
@@ -22,6 +22,8 @@ public class PuzzleDoor : MonoBehaviour
         {
             onDoorUnlocked.Invoke();
         }
+
+        mainUI = FindObjectOfType<Health>().gameObject;
     }
 
     private void Update()

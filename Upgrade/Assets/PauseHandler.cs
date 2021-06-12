@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PauseHandler : MonoBehaviour
 {
@@ -16,11 +14,9 @@ public class PauseHandler : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-
-
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") && GameManager.inGame)
         {
             if (Paused == true)
             {
