@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220ef559f22c98d4682a1ec7d77057b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemymovespeed: 5
+  enemymovespeed: 1
   health: 10
   damage: 20
   enemyshouldfollow: 0
