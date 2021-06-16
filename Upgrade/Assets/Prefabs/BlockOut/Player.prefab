@@ -178,7 +178,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3df0c8d45d556eb48b2b9dea37747eed, type: 3}
   - {fileID: 8300000, guid: c6f1b3a30904fef40a5459020bc44d3f, type: 3}
   - {fileID: 8300000, guid: e0ce2066ebea7a04ba2898e7604cb225, type: 3}
-  LandSFX: {fileID: 0}
 --- !u!114 &8431832989686405991
 MonoBehaviour:
   m_ObjectHideFlags: 0
