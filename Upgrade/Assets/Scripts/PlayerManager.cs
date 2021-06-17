@@ -17,6 +17,7 @@ public class PlayerManager : MonoBehaviour
     public static event Die OnDie;
     Damagemanager dm;
     public float damage;
+    public static int itemEquipped = 2; // 0 = none, 1 = sword, 2 = bow
 
     Vector2 direction;
     Rigidbody2D rb;
@@ -83,6 +84,7 @@ public class PlayerManager : MonoBehaviour
             transform.position = respawnPoint;
         }
     }
+
 
     private void ReloadLevel()
     {

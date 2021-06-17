@@ -18380,6 +18380,26 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4922479443021799595, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ca68c5a0b5c1c3488111821c4a71fb9, type: 3}
+    - target: {fileID: 6398357447338441363, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: icons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6398357447338441363, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: icons.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: ed068e50b83dcfd4282ccaa31636e0d5, type: 3}
+    - target: {fileID: 6398357447338441363, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: icons.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: ed068e50b83dcfd4282ccaa31636e0d5, type: 3}
+    - target: {fileID: 6398357447338441363, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
+      propertyPath: icons.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ca68c5a0b5c1c3488111821c4a71fb9, type: 3}
     m_RemovedComponents:
     - {fileID: 3930083821429849633, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 301b4244a9f4e6d41ad4f937fba7f3a0, type: 3}

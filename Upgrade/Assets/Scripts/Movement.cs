@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     public float vertical;
     public bool leftShift;
     public bool jump;
+    public static bool changedWeapon;
 
     [SerializeField] private float walkingSpeed;
     [SerializeField] private float runningSpeed;
