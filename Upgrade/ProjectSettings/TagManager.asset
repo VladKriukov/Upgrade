@@ -10,6 +10,7 @@ TagManager:
   - JumpPad
   - Ladders
   - Puzzle
+  - ground
   layers:
   - Default
   - TransparentFX

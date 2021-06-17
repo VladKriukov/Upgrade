@@ -29,12 +29,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionHit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Health>().ChangeHealth(-damage);
-            //DM.playerdamage(damage);
+           
             Debug.Log("Damage Player");
         }
     }
