@@ -1415,22 +1415,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.0009259259
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.99814814
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: orthographic size
-      value: 5.625
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.00052083336
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
+      value: 0.9989584
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_ForceIntoRT
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940492, guid: 7b58016be925e0449819581b56291ea2, type: 3}
@@ -1439,11 +1443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940492, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_RefResolutionX
-      value: 256
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298430940492, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_RefResolutionY
-      value: 176
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298511309284, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_Name
@@ -1491,6 +1495,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3661255298511309285, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255299351382316, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255299351382317, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
