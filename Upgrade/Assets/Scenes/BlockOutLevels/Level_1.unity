@@ -18827,6 +18827,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 5536794952968291648, guid: 982e3f77021299c4bb3f262cc25eefdd, type: 3}
+      propertyPath: m_SortingOrder
+      value: -7
+      objectReference: {fileID: 0}
     - target: {fileID: 7903507608330280047, guid: 982e3f77021299c4bb3f262cc25eefdd, type: 3}
       propertyPath: target
       value: 
@@ -18840,6 +18844,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661255298430940491, guid: 7b58016be925e0449819581b56291ea2, type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3661255298511309284, guid: 7b58016be925e0449819581b56291ea2, type: 3}
       propertyPath: m_Name
       value: CameraController
