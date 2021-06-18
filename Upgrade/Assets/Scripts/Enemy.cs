@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
             enemyRB.velocity = new Vector2(-enemywalkspeed, 0f);
         }
     }
-
     private void OnCollisionHit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -44,6 +43,7 @@ public class Enemy : MonoBehaviour
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
     }
+ 
     public void enemyhealth(float damage)
     {
         health = health - damage;
