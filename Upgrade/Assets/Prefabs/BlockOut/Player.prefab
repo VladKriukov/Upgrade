@@ -162,7 +162,7 @@ MonoBehaviour:
   jumpStrength: 6
   fallStrength: 8
   smallJumpStrength: 7
-  checkStartPos: {x: 0, y: 0.5, z: 0}
+  checkStartPos: {x: 0, y: 0.45, z: 0}
   checkDistance: 0.1
   lLayerMask:
     serializedVersion: 2
