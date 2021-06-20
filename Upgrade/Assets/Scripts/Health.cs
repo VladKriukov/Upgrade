@@ -27,5 +27,6 @@ public class Health : MonoBehaviour
     public void ResetHealth()
     {
         GameManager.playerHealth = startingHP;
+        OnHealthChanged.Invoke();
     }
 }

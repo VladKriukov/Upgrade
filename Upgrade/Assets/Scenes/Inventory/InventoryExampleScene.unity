@@ -3005,7 +3005,7 @@ PrefabInstance:
     - target: {fileID: 6143491930317514278, guid: 59c5c714e1386774fbdf6f9becfa7db9, type: 3}
       propertyPath: shopUI
       value: 
-      objectReference: {fileID: 643641913}
+      objectReference: {fileID: 0}
     - target: {fileID: 6143491930317514279, guid: 59c5c714e1386774fbdf6f9becfa7db9, type: 3}
       propertyPath: m_Name
       value: Inventory
