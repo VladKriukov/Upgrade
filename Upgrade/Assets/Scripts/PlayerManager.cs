@@ -55,17 +55,28 @@ public class PlayerManager : MonoBehaviour
             case "JumpPad":
                 GetComponent<Movement>().JumpUp(jumpPadJumpMultiplier);
                 break;
+            case "enemy":
+                TakeDamage(20);
+                direction = rb.transform.position - collision.transform.position;
+                rb.AddForce(direction.normalized * forceAmount);
+                break;
             default:
                 break;
         }
     }
-
+    public void checkcollision(Collider2D collision)
+    {
+        if(collision.tag == "enemy")
+        {
+            dealdamage(damage);
+        }
+    }
     private void TakeDamage (float damage)
     {
         health.ChangeHealth(-damage);
-        Respawn();
+        
     }
-    public void dealdamage()
+    public void dealdamage(float damage)
     {
         dm.enemydamage(damage);
     }

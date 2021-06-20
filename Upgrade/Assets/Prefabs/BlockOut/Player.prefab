@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8431832989686405991}
   - component: {fileID: 8431832989686405993}
   - component: {fileID: 8431832989686405986}
+  - component: {fileID: 6856264780796655058}
   - component: {fileID: 8431832989686405987}
   m_Layer: 0
   m_Name: Player
@@ -231,6 +232,23 @@ MonoBehaviour:
   jumpPadJumpMultiplier: 1.5
   forceAmount: 100
   damage: 0
+--- !u!114 &6856264780796655058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431832989686405985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaddf44dea2f54449a07f6e7bd47b9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHP: 100
+  hp: 0
+  OnHealthChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &8431832989686405987
 SpriteRenderer:
   m_ObjectHideFlags: 0

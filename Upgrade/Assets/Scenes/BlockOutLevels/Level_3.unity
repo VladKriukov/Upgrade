@@ -943,6 +943,10 @@ PrefabInstance:
       propertyPath: forceAmount
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8431832989686405986, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
+      propertyPath: damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8431832989686405988, guid: 1eae417e96d01314f8ff83ec62c2b667, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -1263,6 +1267,10 @@ PrefabInstance:
     - target: {fileID: 4825139591736519782, guid: d0446bb1bcbc7874aa8017367ec02446, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4825139591736519782, guid: d0446bb1bcbc7874aa8017367ec02446, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 4825139591736519836, guid: d0446bb1bcbc7874aa8017367ec02446, type: 3}
       propertyPath: m_Offset.y
