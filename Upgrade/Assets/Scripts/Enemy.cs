@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
             enemyRB.velocity = new Vector2(-enemywalkspeed, 0f);
         }
     }
-    private void OnCollisionHit2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {

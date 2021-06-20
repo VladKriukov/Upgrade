@@ -15,7 +15,6 @@ public class PlayerManager : MonoBehaviour
     public delegate void Die();
 
     public static event Die OnDie;
-    Damagemanager dm;
     public float damage=5;
     public static int itemEquipped = 2; // 0 = none, 1 = sword, 2 = bow
 
@@ -59,27 +58,15 @@ public class PlayerManager : MonoBehaviour
                 TakeDamage(20);
                 direction = rb.transform.position - collision.transform.position;
                 rb.AddForce(direction.normalized * forceAmount);
-                checkcollision(collision);
                 break;
             default:
                 break;
-        }
-    }
-    public void checkcollision(Collider2D collision)
-    {
-        if(collision.tag == "enemy")
-        {
-            dealdamage(damage);
         }
     }
     private void TakeDamage (float damage)
     {
         health.ChangeHealth(-damage);
         
-    }
-    public void dealdamage(float damage)
-    {
-        dm.enemydamage(damage);
     }
 
     private void Respawn()
