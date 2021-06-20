@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
 
     public static event Die OnDie;
     Damagemanager dm;
-    public float damage;
+    public float damage=5;
     public static int itemEquipped = 2; // 0 = none, 1 = sword, 2 = bow
 
     Vector2 direction;
@@ -59,6 +59,7 @@ public class PlayerManager : MonoBehaviour
                 TakeDamage(20);
                 direction = rb.transform.position - collision.transform.position;
                 rb.AddForce(direction.normalized * forceAmount);
+                checkcollision(collision);
                 break;
             default:
                 break;
