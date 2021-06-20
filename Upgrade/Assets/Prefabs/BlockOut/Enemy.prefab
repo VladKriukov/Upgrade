@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   damage: 10
-  enemywalkspeed: 3
+  enemywalkspeed: 2
 --- !u!212 &4825139591736519833
 SpriteRenderer:
   m_ObjectHideFlags: 0

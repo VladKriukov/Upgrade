@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7508363995114671218}
   - component: {fileID: 7508363995114671219}
   - component: {fileID: 7508363995114671223}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: flyenemy
   m_TagString: Danger
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.9362533, y: 0.1002686}
+  m_Offset: {x: -0.25, y: -1.51}
   serializedVersion: 2
   m_Radius: 1.536722
 --- !u!114 &7508363995341236373

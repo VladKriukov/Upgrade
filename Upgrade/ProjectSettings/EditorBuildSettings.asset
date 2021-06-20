@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: 99ae2e9f54a81474781cea339c5ff52c
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_2.unity
-    guid: 6a4dd991f806a1745afd50262d1510eb
+    guid: eddb67a81c6031046a667d2a351317b2
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_3.unity
     guid: bfde3b5ca1a76f040a6e4dd1f25deaf7
@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: a884910ae49a47e4aba03f57a4229fc0
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_5.unity
-    guid: ab76f4947372de344a25cc038a62358d
+    guid: 6a4dd991f806a1745afd50262d1510eb
   - enabled: 1
     path: Assets/Scenes/BlockOutLevels/Level_6.unity
     guid: d23f6a25f65fbee4ca8e5023b22f64ca
@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BlockOutLevels/Level_7.unity
     guid: e3734278998db124687015abc5312601
   - enabled: 1
-    path: Assets/Scenes/Inventory/InventoryExampleScene.unity
-    guid: 83b4473cb1678f6439b22f9d8f6f3b41
+    path: Assets/Scenes/BlockOutLevels/Level_8.unity
+    guid: 177dbb0d9138c004cbe0fd6dfbdf0def
+  - enabled: 1
+    path: Assets/Scenes/BlockOutLevels/Level_9.unity
+    guid: 326999f4aaff6534db992f039a40a820
+  - enabled: 1
+    path: Assets/Scenes/BlockOutLevels/Level_10.unity
+    guid: 59cbaff43187f654488f064467878c4d
   m_configObjects: {}
