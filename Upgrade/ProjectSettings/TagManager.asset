@@ -11,6 +11,7 @@ TagManager:
   - Ladders
   - Puzzle
   - ground
+  - enemy
   layers:
   - Default
   - TransparentFX

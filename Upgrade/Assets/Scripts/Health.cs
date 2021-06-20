@@ -18,6 +18,7 @@ public class Health : MonoBehaviour
         Debug.Log("Current health (" + hp + ") adds " + amount + " to hp");
         GameManager.playerHealth += amount;
         OnHealthChanged.Invoke();
+      
     }
 
     public float GetCurrentHealth()
