@@ -2,35 +2,28 @@
 
 public class PlayerAttack : MonoBehaviour
 {
-    private bool waitingForImput;
-    private Enemy enemy;
+    //[SerializeField] Vector3 castOffset;
+    [SerializeField] float radius;
     [SerializeField] float damageAmount = -10;
+    public LayerMask layerMask;
+
     private void Update()
     {
-        if (waitingForImput)
+        if (Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
+            //castOffset.x += transform.position.x;
+            //castOffset.y += transform.position.y;
+            //castOffset.z += transform.position.z;
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, radius, layerMask);
+            if (colliders.Length > 0)
             {
-                enemy.enemyhealth(damageAmount);
+                Debug.Log("hit something");
+                foreach (var item in colliders)
+                {
+                    Debug.Log(item.gameObject.tag);
+                    item.gameObject.GetComponent<Enemy>().enemyhealth(damageAmount);
+                }
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("enemy"))
-        {
-            enemy = collision.GetComponent<Enemy>();
-            waitingForImput = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("enemy"))
-        {
-            enemy = null;
-            waitingForImput = false;
         }
     }
 }

@@ -28,6 +28,7 @@ public class HealthSlider : MonoBehaviour
 
     public void UpdateValue()
     {
+        Debug.Log("Updating slider");
         slider.value = health.GetCurrentHealth();
         UpdateSlider();
     }

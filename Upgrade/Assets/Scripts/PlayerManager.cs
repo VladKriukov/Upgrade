@@ -3,7 +3,7 @@
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private float jumpPadJumpMultiplier;
-    [SerializeField] int forceAmount;
+    [SerializeField] private int forceAmount;
     private Collectable collectable;
     private Vector2 respawnPoint;
     private Health health;
@@ -15,11 +15,12 @@ public class PlayerManager : MonoBehaviour
     public delegate void Die();
 
     public static event Die OnDie;
-    public float damage=5;
+
+    public float damage = 5;
     public static int itemEquipped = 2; // 0 = none, 1 = sword, 2 = bow
 
-    Vector2 direction;
-    Rigidbody2D rb;
+    private Vector2 direction;
+    private Rigidbody2D rb;
 
     private void Start()
     {
@@ -44,9 +45,7 @@ public class PlayerManager : MonoBehaviour
         switch (collision.tag)
         {
             case "Danger":
-                TakeDamage(25);
-                direction = rb.transform.position - collision.transform.position;
-                rb.AddForce(direction.normalized * forceAmount);
+                TakeDamage(25, collision);
                 break;
             case "Respawn":
                 respawnPoint = transform.position;
@@ -55,18 +54,19 @@ public class PlayerManager : MonoBehaviour
                 GetComponent<Movement>().JumpUp(jumpPadJumpMultiplier);
                 break;
             case "enemy":
-                TakeDamage(20);
-                direction = rb.transform.position - collision.transform.position;
-                rb.AddForce(direction.normalized * forceAmount);
+                TakeDamage(20, collision);
                 break;
             default:
                 break;
         }
     }
-    private void TakeDamage (float damage)
+
+    public void TakeDamage(float damage, Collider2D collision)
     {
         health.ChangeHealth(-damage);
-        
+        direction = rb.transform.position - collision.transform.position;
+        rb.AddForce(direction.normalized * forceAmount);
+        Respawn();
     }
 
     private void Respawn()
@@ -83,7 +83,6 @@ public class PlayerManager : MonoBehaviour
             transform.position = respawnPoint;
         }
     }
-
 
     private void ReloadLevel()
     {

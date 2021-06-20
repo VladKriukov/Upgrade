@@ -28,14 +28,7 @@ public class Enemy : MonoBehaviour
             enemyRB.velocity = new Vector2(-enemywalkspeed, 0f);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-           
-            Debug.Log("Damage Player");
-        }
-    }
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(collision.tag=="ground")

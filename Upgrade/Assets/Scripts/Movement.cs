@@ -95,7 +95,7 @@ public class Movement : MonoBehaviour
         if (leftShift && !canSprintInAir && isGrounded)
         {
             currentSpeed = runningSpeed;
-            Debug.Log("Sprinting");
+            //Debug.Log("Sprinting");
         }
         else
         {

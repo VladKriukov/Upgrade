@@ -4,7 +4,6 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     public float startingHP = 100f;
-    public float hp;
 
     public UnityEvent OnHealthChanged;
 
@@ -15,10 +14,9 @@ public class Health : MonoBehaviour
 
     public void ChangeHealth(float amount)
     {
-        Debug.Log("Current health (" + hp + ") adds " + amount + " to hp");
         GameManager.playerHealth += amount;
+        Debug.Log("Current health (" + (GameManager.playerHealth - amount) + ") adds " + amount + " to hp. Result: " + GameManager.playerHealth);
         OnHealthChanged.Invoke();
-      
     }
 
     public float GetCurrentHealth()

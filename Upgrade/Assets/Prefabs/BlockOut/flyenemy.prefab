@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7508363995114671218}
   - component: {fileID: 7508363995114671219}
   - component: {fileID: 7508363995114671223}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: flyenemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 7508363995341236370}
   - component: {fileID: 7508363995341236372}
   - component: {fileID: 7508363995341236373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: locator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
